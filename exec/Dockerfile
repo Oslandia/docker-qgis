@@ -1,8 +1,7 @@
-FROM nginx:1.13
+FROM debian:stretch-slim
 
 RUN apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y \
-        psmisc \
         gnupg1 \
         ca-certificates \
     && apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 \
@@ -10,23 +9,20 @@ RUN apt-get update \
                    --recv-keys 61E0A086749E463EDE502255CAEB3DC3BDF7FB45 \
     && echo "deb http://qgis.org/debian stretch main" >> /etc/apt/sources.list.d/qgis.list \
     && apt-get update \
-    && apt-get install -y \
-        psmisc \
+    && apt-get install --no-install-recommends --no-install-suggests -y \
+        xauth \
+        xvfb \
         spawn-fcgi \
         qgis-server \
     && rm -rf /var/lib/apt/lists/*
-
-RUN apt-get update \
-    && apt-get install --no-install-recommends --no-install-suggests -y \
-        xauth \
-        xvfb
 
 ENV TINI_VERSION v0.17.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
 
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
+ENV QGIS_PREFIX_PATH /usr
+ENV QGIS_SERVER_LOG_FILE /var/log/qgisserver.log
+ENV QGIS_SERVER_LOG_LEVEL 0
+ENV QGIS_DEBUG 1
 
-ENTRYPOINT ["/tini", "--"]
-CMD ["/start.sh"]
+CMD ["/tini", "--", "xvfb-run", "spawn-fcgi", "-p", "5555", "-n", "/usr/lib/cgi-bin/qgis_mapserv.fcgi"]

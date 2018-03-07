@@ -1,0 +1,268 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.0.0-Girona" projectname="">
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+      <srsid>3857</srsid>
+      <srid>3857</srid>
+      <authid>EPSG:3857</authid>
+      <description>WGS 84 / Pseudo Mercator</description>
+      <projectionacronym>merc</projectionacronym>
+      <ellipsoidacronym>WGS84</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer checked="Qt::Checked" providerKey="wms" expanded="1" id="OSM_61bcc1fb_e84e_4aa7_8f4f_48b45a124dfc" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://a.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=18&amp;zmin=0" name="OSM">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>OSM_61bcc1fb_e84e_4aa7_8f4f_48b45a124dfc</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings intersection-snapping="0" tolerance="12" mode="2" type="1" enabled="0" unit="1">
+    <individual-layer-settings/>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>-21039383.75992870703339577</xmin>
+      <ymin>-21039383.75992871820926666</ymin>
+      <xmax>21039383.75992870703339577</xmax>
+      <ymax>21039383.75992870330810547</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+        <srsid>3857</srsid>
+        <srid>3857</srid>
+        <authid>EPSG:3857</authid>
+        <description>WGS 84 / Pseudo Mercator</description>
+        <projectionacronym>merc</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer checked="Qt::Checked" drawingOrder="-1" open="true" showFeatureCount="0" name="OSM">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile layerid="OSM_61bcc1fb_e84e_4aa7_8f4f_48b45a124dfc" visible="1" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <projectlayers>
+    <maplayer hasScaleBasedVisibilityFlag="0" minScale="1e+8" autoRefreshEnabled="0" refreshOnNotifyMessage="" maxScale="0" type="raster" autoRefreshTime="0" refreshOnNotifyEnabled="0">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278925508260727</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924390673637</ymax>
+      </extent>
+      <id>OSM_61bcc1fb_e84e_4aa7_8f4f_48b45a124dfc</id>
+      <datasource>crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://a.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=18&amp;zmin=0</datasource>
+      <shortname>osm</shortname>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>OSM</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" minz="0" dimensions="2" maxx="0" maxz="0" crs="" miny="0" minx="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+      </resourceMetadata>
+      <customproperties>
+        <property key="WMSBackgroundLayer" value="true"/>
+        <property key="WMSPublishDataSourceUrl" value="false"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer type="singlebandcolordata" alphaBand="-1" opacity="1" band="1">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation grayscaleMode="0" colorizeStrength="100" colorizeBlue="128" colorizeRed="255" colorizeOn="0" colorizeGreen="128" saturation="0"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="OSM_61bcc1fb_e84e_4aa7_8f4f_48b45a124dfc"/>
+  </layerorder>
+  <properties>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+    </Gui>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <WMSCrsList type="QStringList">
+      <value>EPSG:3857</value>
+    </WMSCrsList>
+    <WFSLayers type="QStringList"/>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSRootName type="QString">OSM</WMSRootName>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WCSLayers type="QStringList"/>
+    <PAL>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+      <SearchMethod type="int">0</SearchMethod>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+    </PAL>
+    <Measure>
+      <Ellipsoid type="QString">WGS84</Ellipsoid>
+    </Measure>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <WFSUrl type="QString"></WFSUrl>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
+    <DefaultStyles>
+      <RandomColors type="bool">true</RandomColors>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Opacity type="double">1</Opacity>
+      <Marker type="QString"></Marker>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSUrl type="QString"></WMSUrl>
+    <WCSUrl type="QString"></WCSUrl>
+    <Identify>
+      <disabledLayers type="QStringList"/>
+    </Identify>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSExtent type="QStringList">
+      <value>-37611013.43885733187198639</value>
+      <value>-21039383.75992871820926666</value>
+      <value>37611013.43885733187198639</value>
+      <value>21039383.75992870330810547</value>
+    </WMSExtent>
+  </properties>
+  <visibility-presets/>
+  <transformContext/>
+  <Annotations/>
+  <Layouts/>
+</qgis>

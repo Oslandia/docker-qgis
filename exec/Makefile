@@ -1,0 +1,24 @@
+.PHONY: install
+install: .venv/bin/docker-compose
+
+.PHONY: build
+build:
+	docker build -t qgis-exec .
+
+.PHONY: run
+run: .venv/bin/docker-compose
+	.venv/bin/docker-compose up
+
+.PHONY: stop
+stop: .venv/bin/docker-compose
+	.venv/bin/docker-compose rm -sf
+
+.PHONY: clean
+clean:
+	rm -rf .venv
+
+.venv/bin/docker-compose: .venv/bin/python3
+	.venv/bin/pip install docker-compose
+
+.venv/bin/python3:
+	virtualenv .venv
