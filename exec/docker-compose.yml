@@ -15,7 +15,8 @@ services:
     networks:
     - qgis
     volumes:
-    - ./osm.qgs:/osm.qgs:ro
+    - ./data:/data:ro
+    environment:
+    - QGIS_PROJECT_FILE=/data/osm.qgs
 networks:
   qgis: {}
-
