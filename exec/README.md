@@ -6,7 +6,7 @@ which includes all the software necessary for running QGIS Server.
 ## Build the image
 
 There are actually two Dockerfiles: `Dockerfile` and `Dockerfile-official`. When
-`Dockerfile-official` is used the official QGIS packages from `http://qgis.org/debian/` are used.
+`Dockerfile-official` is used official QGIS packages from http://qgis.org/debian/ are used.
 When using `Dockerfile` local packages (generated using a `qgis-build` container) are used.
 
 Build the image using official QGIS packages:
