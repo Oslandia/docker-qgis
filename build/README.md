@@ -4,6 +4,8 @@ The `qgis-build` Docker image includes all the tools and libraries necessary for
 
 ## Build the image
 
+Build the `qgis-build` Docker image:
+
 ```shell
 $ docker build -t qgis-build .
 ```
