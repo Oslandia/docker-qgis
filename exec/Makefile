@@ -5,12 +5,12 @@ install: .venv/bin/docker-compose
 build: deb/.copy.ts
 	docker build -t qgis-exec .
 
-.PHONY: run
-run: .venv/bin/docker-compose
+.PHONY: stack-up
+stack-up: .venv/bin/docker-compose
 	.venv/bin/docker-compose up
 
-.PHONY: stop
-stop: .venv/bin/docker-compose
+.PHONY: stack-down
+stack-down: .venv/bin/docker-compose
 	.venv/bin/docker-compose rm -sf
 
 .PHONY: clean
