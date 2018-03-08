@@ -1,26 +1,19 @@
 FROM debian:stretch-slim
 
-COPY deb/libqgis-analysis*.deb \
-     deb/libqgis-app*.deb \
-     deb/libqgis-core*.deb \
-     deb/libqgis-customwidgets*.deb \
-     deb/libqgisgrass7*.deb \
-     deb/libqgis-gui*.deb \
-     deb/libqgis-native*.deb \
-     deb/libqgispython*.deb \
-     deb/libqgis-server*.deb \
-     deb/python-qgis*.deb \
-     deb/qgis-common*.deb \
-     deb/qgis-providers*.deb \
-     deb/qgis-server*.deb \
-     /qgis/
-
 RUN apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y \
-        spawn-fcgi \
+        gnupg1 \
+        ca-certificates \
+    && apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 \
+                   --keyserver-options timeout=10 \
+                   --recv-keys 61E0A086749E463EDE502255CAEB3DC3BDF7FB45 \
+    && echo "deb http://qgis.org/debian stretch main" >> /etc/apt/sources.list.d/qgis.list \
+    && apt-get update \
+    && apt-get install --no-install-recommends --no-install-suggests -y \
         xauth \
         xvfb \
-    && apt install --no-install-recommends --no-install-suggests -y /qgis/*.deb \
+        spawn-fcgi \
+        qgis-server \
     && rm -rf /var/lib/apt/lists/*
 
 ENV TINI_VERSION v0.17.0

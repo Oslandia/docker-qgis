@@ -2,7 +2,7 @@
 install: .venv/bin/docker-compose
 
 .PHONY: build
-build:
+build: deb/.copy.ts
 	docker build -t qgis-exec .
 
 .PHONY: run
@@ -22,3 +22,12 @@ clean:
 
 .venv/bin/python3:
 	virtualenv .venv
+
+deb/.copy.ts:
+ifndef DEBSRCDIR
+	$(error DEBSRCDIR not defined)
+else
+	@mkdir -p $(dir $@)
+	@cp $(shell find $(DEBSRCDIR) -name *.deb) deb/
+	@touch $@
+endif
