@@ -77,3 +77,7 @@ Stop the stack:
 ```shell
 $ docker-compose rm -sf
 ```
+
+## TODO
+
+* Run QGIS Server as a non-root user within the `qgis-exec` container
