@@ -13,7 +13,9 @@ $ docker build -t qgis-build .
 
 ## Build QGIS
 
-Create a build directory and place the QGIS source tree in that directory:
+Create a `build` directory and place the QGIS source tree in that directory. Do not create it under
+the `qgis-build` directory (or under a sub-directory of `qgis-build`), otherwise the QGIS source
+tree will be part of the Docker context and building the image again will take a lot of time.
 
 ```shell
 $ mkdir build
