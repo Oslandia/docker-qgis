@@ -51,9 +51,9 @@ The `qgis-exec` image includes QGIS Server and the `spwan-fcgi` program for run
 include a web server. This means that in addition to a `qgis-exec` container a web server should be
 be run (and configured to forward requests to QGIS Server running in the `qgis-exec` container).
 
-To that end this directory includes a `docker-compose.yml` defining a complete stack for running
-QGIS Server. That stack is composed of a `qgis-exec` container and an NGINX container properly
-configured.
+To that end this directory includes a Docker Compose file (`docker-compose.yml`) defining a complete
+stack for running QGIS Server. That stack is composed of a `qgis-exec` container and an NGINX
+container configured to work with `qgis-exec`.
 
 Start the stack:
 
