@@ -36,4 +36,7 @@ Build QGIS:
 $ docker run -it --rm -v $(pwd):/qgis qgis-build
 ```
 
-The build process creates Debian packages in the `build` directory.
+Note that the `docker run` command should be run from the `build` directory, that is the directory
+that contains the `QGIS` repository.
+
+After the build completes you should find Debian packages (`.deb` files) in the `build` directory.
