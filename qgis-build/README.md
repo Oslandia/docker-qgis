@@ -33,10 +33,15 @@ $ git clone https://github.com/qgis/QGIS.git
 Build QGIS:
 
 ```shell
-$ docker run -it --rm -v $(pwd):/qgis qgis-build
+$ docker run -it --rm -v $(pwd):/qgis -u $(id -u):$(id -g) qgis-build
 ```
 
 Note that the `docker run` command should be run from the `build` directory, that is the directory
 that contains the `QGIS` repository.
+
+Notes:
+
+* `-v $(pwd):/qgis` is used to mount the current directory (`build`) into `/qgis` in the container
+* `-u $(id -u):$(id -g)` is used to use the local user id and group id within the container
 
 After the build completes you should find Debian packages (`.deb` files) in the `build` directory.
