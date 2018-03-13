@@ -5,9 +5,16 @@ which includes all the software necessary for running QGIS Server.
 
 ## Build the image
 
-There are actually two Dockerfiles: `Dockerfile` and `Dockerfile-official`. When
-`Dockerfile-official` is used official QGIS packages from http://qgis.org/debian/ are used.
-When using `Dockerfile` local packages (generated using a `qgis-build` container) are used.
+First of all clone the Git repo and change to the `qgis-exec` directory:
+
+```shell
+$ git clone ssh://git@git.oslandia.net:10022/Client-projects/docker-qgis.git
+$ cd docker-qgis/qgis-exec
+```
+
+The `qgis-exec` directory actually includes two Dockerfiles: `Dockerfile` and `Dockerfile-official`.
+With `Dockerfile-official` official QGIS packages from http://qgis.org/debian/ are used.  With
+`Dockerfile` local packages (generated using a `qgis-build` container) are used.
 
 Build the image using official QGIS packages:
 

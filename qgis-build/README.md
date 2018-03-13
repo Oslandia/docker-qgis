@@ -5,6 +5,13 @@ all the tools and libraries necessary for building QGIS from source.
 
 ## Build the image
 
+Clone the Git repo and change to the `qgis-build` directory:
+
+```shell
+$ git clone ssh://git@git.oslandia.net:10022/Client-projects/docker-qgis.git
+$ cd docker-qgis/qgis-build
+```
+
 Build the `qgis-build` Docker image:
 
 ```shell
