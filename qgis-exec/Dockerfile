@@ -23,6 +23,8 @@ RUN apt-get update \
     && apt install --no-install-recommends --no-install-suggests -y /qgis/*.deb \
     && rm -rf /var/lib/apt/lists/*
 
+RUN useradd -m qgis
+
 ENV TINI_VERSION v0.17.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
@@ -32,4 +34,9 @@ ENV QGIS_SERVER_LOG_FILE /var/log/qgisserver.log
 ENV QGIS_SERVER_LOG_LEVEL 0
 ENV QGIS_DEBUG 1
 
-CMD ["/tini", "--", "xvfb-run", "spawn-fcgi", "-p", "5555", "-n", "/usr/lib/cgi-bin/qgis_mapserv.fcgi"]
+USER qgis
+WORKDIR /home/qgis
+
+CMD ["/tini", "--", "xvfb-run", \
+     "spawn-fcgi", "-p", "5555", "-n", "-d", "/home/qgis", \
+     "/usr/lib/cgi-bin/qgis_mapserv.fcgi"]
