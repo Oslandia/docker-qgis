@@ -8,7 +8,7 @@ which includes all the software necessary for running QGIS Server.
 First of all clone the Git repo and change to the `qgis-exec` directory:
 
 ```shell
-$ git clone ssh://git@git.oslandia.net:10022/Client-projects/docker-qgis.git
+$ git clone https://github.com/Oslandia/docker-qgis
 $ cd docker-qgis/qgis-exec
 ```
 
