@@ -13,6 +13,10 @@ stack-up: .venv/bin/docker-compose
 stack-down: .venv/bin/docker-compose
 	.venv/bin/docker-compose rm -sf
 
+.PHONY: rm-dangling-images
+rm-dangling-images:
+	@docker images -f "dangling=true" -q | xargs --no-run-if-empty docker rmi
+
 .PHONY: clean
 clean:
 	rm -rf .venv
