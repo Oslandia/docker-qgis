@@ -17,6 +17,7 @@ COPY deb/libqgis-analysis*.deb \
 
 RUN apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y \
+        multiwatch \
         spawn-fcgi \
         xauth \
         xvfb \
@@ -34,9 +35,11 @@ ENV QGIS_SERVER_LOG_FILE /var/log/qgisserver.log
 ENV QGIS_SERVER_LOG_LEVEL 0
 ENV QGIS_DEBUG 1
 
+ENV PROCESSES 1
+
 USER qgis
 WORKDIR /home/qgis
 
-CMD ["/tini", "--", "xvfb-run", \
-     "spawn-fcgi", "-p", "5555", "-n", "-d", "/home/qgis", \
-     "/usr/lib/cgi-bin/qgis_mapserv.fcgi"]
+ENTRYPOINT ["/tini", "--"]
+
+CMD ["sh", "-c", "xvfb-run spawn-fcgi -p 5555 -n -d /home/qgis -- /usr/bin/multiwatch -f $PROCESSES -- /usr/lib/cgi-bin/qgis_mapserv.fcgi"]
