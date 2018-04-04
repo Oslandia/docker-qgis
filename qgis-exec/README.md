@@ -52,7 +52,7 @@ Build the image using local packages:
 $ docker build -t qgis-exec .
 ```
 
-## Run QGIS Server
+## Run NGINX and QGIS Server
 
 The `qgis-exec` image includes QGIS Server and the `spwan-fcgi` program for running it. It doesn't
 include a web server. This means that in addition to a `qgis-exec` container a web server should be
@@ -85,7 +85,34 @@ Stop the stack:
 $ docker-compose rm -sf
 ```
 
+## Without Docker Compose
+
+If you just want to run a `qgis-exec` container you can use this:
+
+```shell
+$ docker run -d --name qgis-exec -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" -e "PROCESSES=4" qgis-exec
+```
+
+And you can use `docker stop` and `docker rm` to stop and remove the container:
+
+```shell
+$ docker stop qgis-exec
+$ docker rm qgis-exec
+```
+
+If the web server (NGINX) also runs in a container you will probably want to create a specific
+Docker network for the web server and `qgis-exec` containers to be able to communicate :
+
+```shell
+$ docker network create qgis
+```
+
+And this is how you can make the `qgis-exec` container use that network:
+
+```shell
+$ docker run -d --name qgis-exec --network=qgis -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" -e "PROCESSES=4" qgis-exec
+```
+
 ## TODO
 
-* Make the number of processes spawned by `spawn-fcgi` configurable
 * Test the performance
