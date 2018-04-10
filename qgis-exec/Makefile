@@ -1,3 +1,5 @@
+VIRTUALENV ?= virtualenv
+
 .PHONY: install
 install: .venv/bin/docker-compose
 
@@ -25,7 +27,7 @@ clean:
 	.venv/bin/pip install docker-compose
 
 .venv/bin/python3:
-	virtualenv .venv
+	$(VIRTUALENV) .venv
 
 deb/.copy.ts:
 ifndef DEBSRCDIR
