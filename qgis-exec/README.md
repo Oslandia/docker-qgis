@@ -113,6 +113,12 @@ And this is how you can make the `qgis-exec` container use that network:
 $ docker run -d --name qgis-exec --network=qgis -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" -e "PROCESSES=4" qgis-exec
 ```
 
+## Known issues/caveats
+
+* On CentOS the container may fail to start with a "Permission denied" errors. It is likely that the
+  errors are related to SELinux. To fix it you can edit `docker-compose.yml` and change `:ro` to
+  `:ro,Z` in the volume definitions.
+
 ## TODO
 
 * Test the performance
