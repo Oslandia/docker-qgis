@@ -20,5 +20,6 @@ services:
     environment:
     - QGIS_PROJECT_FILE=/data/osm.qgs
     - PROCESSES=4
+    # - DEBUG=1  # display environment before spawning QGIS Server
 networks:
   qgis: {}

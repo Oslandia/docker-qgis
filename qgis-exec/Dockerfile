@@ -37,9 +37,11 @@ ENV QGIS_DEBUG 1
 
 ENV PROCESSES 1
 
+COPY --chown=qgis:qgis cmd.sh /home/qgis/cmd.sh
+
 USER qgis
 WORKDIR /home/qgis
 
 ENTRYPOINT ["/tini", "--"]
 
-CMD ["sh", "-c", "xvfb-run spawn-fcgi -p 5555 -n -d /home/qgis -- /usr/bin/multiwatch -f $PROCESSES -- /usr/lib/cgi-bin/qgis_mapserv.fcgi"]
+CMD ["/home/qgis/cmd.sh"]
