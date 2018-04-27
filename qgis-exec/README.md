@@ -1,6 +1,6 @@
 # qgis-exec
 
-This directory includes a Dockerfile and other files for building the `qgis-exec` Docker image,
+This directory contains a Dockerfile and other files for building the `qgis-exec` Docker image,
 which includes all the software necessary for running QGIS Server.
 
 ## Build the image
@@ -56,7 +56,7 @@ $ docker build -t qgis-exec .
 
 The `qgis-exec` image includes QGIS Server and the `spwan-fcgi` program for running it. It doesn't
 include a web server. This means that in addition to a `qgis-exec` container a web server should be
-be run (and configured to forward requests to QGIS Server running in the `qgis-exec` container).
+be run, and configured to forward requests to QGIS Server running in the `qgis-exec` container.
 
 To that end this directory includes a Docker Compose file (`docker-compose.yml`) defining a complete
 stack for running QGIS Server. That stack is composed of a `qgis-exec` container and an NGINX
@@ -115,8 +115,8 @@ $ docker run -d --name qgis-exec --network=qgis -v $(pwd)/data:/data:ro -e "QGIS
 
 ## Known issues/caveats
 
-* On CentOS the container may fail to start with a "Permission denied" errors. It is likely that the
-  errors are related to SELinux. To fix it you can edit `docker-compose.yml` and change `:ro` to
+* On CentOS the containers may fail to start with a "Permission denied" errors. It is likely that
+  the errors are related to SELinux. To fix it you can edit `docker-compose.yml` and change `:ro` to
   `:ro,Z` in the volume definitions.
 
 ## TODO
