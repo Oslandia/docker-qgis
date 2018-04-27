@@ -1,7 +1,7 @@
 # qgis-build
 
-This directory includes a Dockerfile for building the `qgis-build` Docker image, which includes
-all the tools and libraries necessary for building QGIS from source.
+This directory contains a Dockerfile for building the `qgis-build` Docker image, which includes all
+the tools and libraries necessary for building QGIS from source.
 
 ## Build the image
 
