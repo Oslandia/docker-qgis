@@ -113,6 +113,17 @@ And this is how you can make the `qgis-exec` container use that network:
 $ docker run -d --name qgis-exec --network=qgis -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" -e "PROCESSES=4" qgis-exec
 ```
 
+## Query on the command line
+
+For testing purposes it's possible to execute a query on the command line. This is done by setting
+the `QUERY_STRING` environment variable for the execution of `qgis_mapserv.fcgi`.
+
+For example:
+
+```shell
+$ docker run -it --rm -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" -e "QUERY_STRING=SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0" qgis-exec /usr/lib/cgi-bin/qgis_mapserv.fcgi
+```
+
 ## Known issues/caveats
 
 * On CentOS the containers may fail to start with a "Permission denied" errors. It is likely that
