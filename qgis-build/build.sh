@@ -2,8 +2,13 @@
 
 set -e
 
-cd /qgis/QGIS
-dch -l ~${DIST} --force-distribution --distribution ${DIST} "${DIST} build"
-DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -us -uc -b --pre-clean --post-clean
+MAKE_OPTIONS=""
+[[ -n $PROCESSES ]] && MAKE_OPTIONS="$MAKE_OPTIONS -j $PROCESSES"
+
+cd  /qgis/QGIS
+mkdir -p build
+cd build
+cmake ..
+make $MAKE_OPTIONS
 
 exit 0
