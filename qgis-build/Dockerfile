@@ -94,9 +94,12 @@ RUN apt-get update \
         xvfb \
     && rm -rf /var/lib/apt/lists/*
 
+COPY build-debs.sh /build-debs.sh
 COPY build.sh /build.sh
-RUN chmod u+x /build.sh
+RUN chmod a+x /build-debs.sh /build.sh
 
 ENV DIST stretch
 
-CMD ["/build.sh"]
+WORKDIR /qgis/QGIS
+
+CMD ["/build-debs.sh"]
