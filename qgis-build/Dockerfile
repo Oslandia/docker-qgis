@@ -31,6 +31,7 @@ RUN apt-get update \
         libqca-qt5-2-plugins \
         libqt5opengl5-dev \
         libqt5scintilla2-dev \
+        libqt5serialport5-dev \
         libqt5sql5-sqlite \
         libqt5svg5-dev \
         libqt5webkit5-dev \
@@ -44,6 +45,7 @@ RUN apt-get update \
         lighttpd \
         locales \
         ninja-build \
+        opencl-headers \
         pkg-config \
         poppler-utils \
         pyqt5-dev \
@@ -78,6 +80,7 @@ RUN apt-get update \
         qt5-default \
         qt5keychain-dev \
         qtbase5-dev \
+        qtbase5-private-dev \
         qtpositioning5-dev \
         qttools5-dev \
         qttools5-dev-tools \
