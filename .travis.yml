@@ -1,0 +1,11 @@
+sudo: required
+
+services:
+- docker
+
+before_script:
+- (mkdir qgis && cd qgis && git clone https://github.com/qgis/QGIS.git)
+
+script:
+- travis_wait 180 ./qgis-build/.build.sh && ./qgis-exec/.build.sh
+- ./qgis-exec/.build-official.sh

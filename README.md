@@ -1,5 +1,7 @@
 # Docker QGIS
 
+[![Build Status](https://travis-ci.org/Oslandia/docker-qgis.svg?branch=master)](https://travis-ci.org/Oslandia/docker-qgis)
+
 This repo provides two Docker images for QGIS: `qgis-build` and `qgis-exec`.
 
 The `qgis-build` image is used for building QGIS from source. Debian packages of QGIS are created.
