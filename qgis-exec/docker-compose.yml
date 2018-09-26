@@ -19,6 +19,7 @@ services:
     - ./data:/data:ro
     environment:
     - QGIS_PROJECT_FILE=/data/osm.qgs
+    - QGIS_SERVER_LOG_LEVEL=0  # INFO (log all requests)
     - PROCESSES=1
     # - DEBUG=1  # display environment before spawning QGIS Server
 networks:
