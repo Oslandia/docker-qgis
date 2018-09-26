@@ -3,6 +3,8 @@
 This directory contains a Dockerfile and other files for building the `qgis-exec` Docker image,
 which includes all the software necessary for running QGIS Server.
 
+Note: with this image QGIS Server is spawned by the FastCGI Server [spawn-fcgi](https://github.com/lighttpd/spawn-fcgi). The image doesn't include a web server. This means that, in addition to the `qgis-exec` container a web server should be run, and configured to forward requests to QGIS Server running in the `qgis-exec` container. See below for more information.
+
 ## Build the image
 
 First of all clone the Git repo and change to the `qgis-exec` directory:
@@ -112,6 +114,21 @@ And this is how you can make the `qgis-exec` container use that network:
 ```shell
 $ docker run -d --name qgis-exec --network=qgis -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" -e "PROCESSES=4" qgis-exec
 ```
+
+## Logging
+
+By default, with a `qgis-exec` container built using `Dockerfile`, QGIS Server writes its logs to
+stderr. This means that the QGIS Server logs are managed by Docker Engine; and, depending on the
+[Docker logging driver](https://docs.docker.com/config/containers/logging/configure/) used, the QGIS
+Server logs may be viewed using `docker logs <qgis_exec_container_id>`. Also, the default QGIS
+Server log level is 2 (CRITICAL logs only). These settings are controlled by the
+`QGIS_SERVER_LOG_STDERR`, `QGIS_SERVER_LOG_FILE` and `QGIS_SERVER_LOG_LEVEL` environment variables,
+which can be set at container run time. See [docker-compose.yml](docker-compose.yml) for an example.
+
+With a `qgis-exec` container built using `Docker-official` QGIS Server writes its logs to the
+`/tmp/qgisserver.log` file by default. This is because the current QGIS release (3.2.3) does not
+support logging to stderr. When QGIS 3.4 will be released the default will change to logging to
+stderr.
 
 ## Query on the command line
 
