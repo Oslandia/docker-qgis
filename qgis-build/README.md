@@ -47,3 +47,18 @@ Notes:
 * `-e CCACHE_DIR=/.ccache` is used to set the `CCACHE_DIR` envvar to `/.ccache` for the compilation
 
 After the build completes you should find Debian packages (`.deb` files) in the `build` directory.
+
+## Advanced
+
+By default, when running `docker run qgis-build`, the image's `/build-deb.sh` script is executed.
+That script uses the `dch` and `dpkg-buildpackage` commands to build Debian packages for QGIS.
+
+If you just want to compile QGIS and don't want Debian packages you can change the command at
+`docker run` time and use `bash` instead of the default `/build-deb.sh` script:
+
+```shell
+$ docker run -it --rm -v $(pwd):/qgis -v $HOME/.ccache:/.ccache -u $(id -u):$(id -g) -e CCACHE_DIR=/.ccache qgis-build bash
+```
+
+At this point you can execute the images's `/build.sh` script for building and installing QGIS using
+`cmake` and `make`. Or you can execute the build commands of your choice.
