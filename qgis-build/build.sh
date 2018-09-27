@@ -2,8 +2,28 @@
 
 set -e
 
-cd /qgis/QGIS
-dch -l ~${DIST} --force-distribution --distribution ${DIST} "${DIST} build"
-DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -us -uc -b --pre-clean --post-clean
+ROOT="/qgis"
+QGIS="${ROOT}/QGIS"
+BUILD="${QGIS}/build"
+INSTALL="${ROOT}/install"
+
+mkdir -p ${BUILD}
+mkdir -p ${DIST}
+
+cd ${BUILD}
+cmake -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_INSTALL_PREFIX=${INSTALL} \
+      -DCMAKE_VERBOSE_MAKEFILE=ON \
+      -DWITH_DESKTOP=OFF \
+      -DWITH_SERVER=ON \
+      -DWITH_SERVER_PLUGINS=ON \
+      -DSERVER_SKIP_ECW=ON \
+      -DSUPPRESS_QT_WARNINGS=ON \
+      -DENABLE_TESTS=OFF \
+      -DWITH_ASTYLE=OFF \
+      -DWITH_APIDOC=OFF \
+      ${QGIS}
+make $@
+make install
 
 exit 0
