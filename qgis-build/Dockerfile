@@ -19,6 +19,7 @@ RUN apt-get update \
         graphviz \
         grass-dev \
         libdistro-info-perl \
+        libexiv2-dev \
         libexpat1-dev \
         libfcgi-dev \
         libgdal-dev \
