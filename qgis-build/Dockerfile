@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
 RUN apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y \
@@ -19,6 +19,7 @@ RUN apt-get update \
         graphviz \
         grass-dev \
         libdistro-info-perl \
+        libexiv2-dev \
         libexpat1-dev \
         libfcgi-dev \
         libgdal-dev \
@@ -45,6 +46,7 @@ RUN apt-get update \
         lighttpd \
         locales \
         ninja-build \
+        ocl-icd-opencl-dev \
         opencl-headers \
         pkg-config \
         poppler-utils \
@@ -84,6 +86,7 @@ RUN apt-get update \
         qtpositioning5-dev \
         qttools5-dev \
         qttools5-dev-tools \
+        saga \
         spawn-fcgi \
         txt2tags \
         xauth \
