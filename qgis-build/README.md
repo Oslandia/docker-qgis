@@ -30,6 +30,12 @@ $ cd build
 $ git clone https://github.com/qgis/QGIS.git
 ```
 
+Create a directory `.ccache` in your home dir if you don't have one already:
+
+```shell
+$ mkdir $HOME/.ccache
+```
+
 Build QGIS:
 
 ```shell
