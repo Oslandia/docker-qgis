@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
 COPY deb/libqgis-analysis*.deb \
      deb/libqgis-app*.deb \
