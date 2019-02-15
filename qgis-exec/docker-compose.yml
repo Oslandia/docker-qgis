@@ -2,10 +2,7 @@ version: '2'
 services:
   nginx:
     image: nginx:1.13
-    ports:
-    - 8080:80
-    networks:
-    - qgis
+    network_mode: host
     volumes:
     - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
     - ./map.html:/usr/share/nginx/html/index.html:ro
@@ -13,14 +10,13 @@ services:
     - qgis-exec
   qgis-exec:
     image: qgis-exec:latest
-    networks:
-    - qgis
+    network_mode: host
     volumes:
-    - ./data:/data:ro
+    - /home/elemoine/src/eleonore/qgis/eleonore:/data:ro
+    - /home/elemoine/.pgpass:/home/qgis/.pgpass:ro
     environment:
-    - QGIS_PROJECT_FILE=/data/osm.qgs
-    - QGIS_SERVER_LOG_LEVEL=0  # INFO (log all requests)
+    - QGIS_OPTIONS_PATH=/data
+    - QGIS_PROJECT_FILE=/data/cluster-test.qgs
+    - QGIS_SERVER_LOG_LEVEL=0
     - PROCESSES=1
-    - DEBUG=1                  # display env before spawning QGIS Server
-networks:
-  qgis: {}
+    - DEBUG=1
