@@ -2,6 +2,8 @@
 
 set -e
 
+BUILD_TYPE=${BUILD_TYPE:-Release}
+
 ROOT="/qgis"
 QGIS="${ROOT}/QGIS"
 BUILD="${QGIS}/build"
@@ -11,7 +13,7 @@ mkdir -p ${BUILD}
 mkdir -p ${DIST}
 
 cd ${BUILD}
-cmake -DCMAKE_BUILD_TYPE=Release \
+cmake -DCMAKE_BUILD_TYPE=${BUILD_TYPE} \
       -DCMAKE_INSTALL_PREFIX=${INSTALL} \
       -DCMAKE_VERBOSE_MAKEFILE=ON \
       -DWITH_DESKTOP=OFF \

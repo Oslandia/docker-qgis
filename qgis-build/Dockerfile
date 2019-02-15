@@ -100,7 +100,7 @@ RUN apt-get update \
 COPY build.sh build-debs.sh /
 RUN chmod a+x /build.sh /build-debs.sh
 
-ENV DIST stretch
+ENV DIST buster
 
 WORKDIR /qgis/QGIS
 
