@@ -15,6 +15,7 @@ RUN apt-get update \
         expect \
         flex \
         gdal-bin \
+        gdb \
         git \
         graphviz \
         grass-dev \
