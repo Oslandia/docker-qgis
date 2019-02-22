@@ -86,6 +86,11 @@ RUN apt-get update \
         qtpositioning5-dev \
         qttools5-dev \
         qttools5-dev-tools \
+        qt3d5-dev \
+        qt3d-assimpsceneimport-plugin \
+        qt3d-defaultgeometryloader-plugin \
+        qt3d-gltfsceneio-plugin \
+        qt3d-scene2d-plugin
         saga \
         spawn-fcgi \
         txt2tags \
