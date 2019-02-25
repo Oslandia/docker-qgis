@@ -68,3 +68,41 @@ $ docker run -it --rm -v $(pwd):/qgis -v $HOME/.ccache:/.ccache -u $(id -u):$(id
 
 At this point you can execute the images's `/build.sh` script for building and installing QGIS using
 `cmake` and `make`. Or you can execute the build commands of your choice.
+
+After the compilation phase `/build.sh` installs QGIS into `/qgis/install`. So if the directory
+`/qgis` is the target of a bind-mount (as in the sample command provided above) then QGIS will be
+installed in a host directory that will still be there after the removal of the container.
+
+Prior to executing `/build.sh` the environment variable `BUILD_TYPE` may be set. If not explicitely
+set the build type defaults to `Release`. When set to `Debug` the resulting compilation artifacts
+will include debug information.
+
+### Debugging QGIS Server
+
+After a sucessful compilation and installation of QGIS (in `/qgis/install`) a new `qgis-build`
+container can be created for debugging QGIS Server.
+
+For example:
+
+```shell
+$ docker run -it --rm -v $(pwd):/qgis v $HOME/qgis-data:/data -u 0 -e LD_LIBRARY_PATH=/qgis/install/lib --network host --cap-add=SYS_PTRACE --security-opt seccomp=unconfined qgis-build bash
+```
+
+* in this example `$HOME/qgis-data/` is where a QGIS project is located on the host machine
+* `LD_LIBRARY_PATH` is set to indicate where the QGIS libs are located
+* `--network host` is used for QGIS to be able to access a database system running on the host machine
+* `--cap-add=SYS_PTRACE` and `--security-opt seccomp=unconfined` are required for executing `gdb`
+
+Now to run QGIS Server with `gdb`:
+
+```shell
+# /usr/bin/xvfb-run --auto-servernum --server-num=5 gdb /qgis/install/bin/qgis_mapserv.fcgi
+(gdb) handle SIG33 nostop noprint pass
+(gdb) set env QGIS_PROJECT_FILE=/data/eleonore.qgs
+(gdb) set env QUERY_STRING=SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities
+(gdb) run
+(gdb) break src/server/qgis_map_serv.cpp:main
+(gdb) run
+```
+
+The `handle SIG33 nostop noprint pass` command is related to some issue in `gdb`. See https://bugzilla.redhat.com/show_bug.cgi?id=162402 for example.
