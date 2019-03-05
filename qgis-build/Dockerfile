@@ -91,7 +91,7 @@ RUN apt-get update \
         qt3d-assimpsceneimport-plugin \
         qt3d-defaultgeometryloader-plugin \
         qt3d-gltfsceneio-plugin \
-        qt3d-scene2d-plugin
+        qt3d-scene2d-plugin \
         saga \
         spawn-fcgi \
         txt2tags \
