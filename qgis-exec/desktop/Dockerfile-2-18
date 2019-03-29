@@ -1,0 +1,19 @@
+FROM debian:testing-slim
+
+RUN apt-get update \
+    && apt-get install --no-install-recommends --no-install-suggests -y \
+        multiwatch \
+        qgis-server \
+        qgis \
+        spawn-fcgi \
+        xauth \
+        xvfb \
+    && rm -rf /var/lib/apt/lists/*
+
+ENV TINI_VERSION v0.17.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+RUN chmod +x /tini
+
+ENTRYPOINT ["/tini", "--"]
+
+CMD ["/usr/bin/qgis"]

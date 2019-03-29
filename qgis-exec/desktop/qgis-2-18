@@ -1,0 +1,12 @@
+#!/bin/bash
+
+docker run -it \
+           --rm \
+           --name qgis \
+           --network host \
+           -v /tmp/.X11-unix:/tmp/.X11-unix \
+           -v $HOME:$HOME \
+           -u $(id -u):$(id -g) \
+           -e DISPLAY=:0 \
+           -e HOME=$HOME \
+           qgis-desktop-2-18
