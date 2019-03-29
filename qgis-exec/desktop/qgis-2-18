@@ -4,6 +4,7 @@ docker run -it \
            --rm \
            --name qgis \
            --network host \
+           --env="QT_X11_NO_MITSHM=1" \
            -v /tmp/.X11-unix:/tmp/.X11-unix \
            -v $HOME:$HOME \
            -u $(id -u):$(id -g) \
