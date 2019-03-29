@@ -16,4 +16,6 @@ RUN chmod +x /tini
 
 ENTRYPOINT ["/tini", "--"]
 
-CMD ["/usr/bin/qgis"]
+ADD start.sh /start.sh
+RUN chmod 0755 /start.sh
+CMD ["/start.sh"]

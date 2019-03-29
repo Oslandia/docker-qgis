@@ -1,13 +1,14 @@
 #!/bin/bash
+USER_NAME=`basename $HOME`
 
 docker run -it \
            --rm \
            --name qgis \
            --network host \
            --env="QT_X11_NO_MITSHM=1" \
+           -v ${HOME}:/home/${USER_NAME} \
            -v /tmp/.X11-unix:/tmp/.X11-unix \
-           -v $HOME:$HOME \
-           -u $(id -u):$(id -g) \
            -e DISPLAY=:0 \
-           -e HOME=$HOME \
+           -e HHHOME=${HOME} \
+           --net=host \
            qgis-desktop-2-18
