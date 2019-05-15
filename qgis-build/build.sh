@@ -24,6 +24,7 @@ cmake -DCMAKE_BUILD_TYPE=${BUILD_TYPE} \
       -DENABLE_TESTS=OFF \
       -DWITH_ASTYLE=OFF \
       -DWITH_APIDOC=OFF \
+      -DENABLE_TESTS=ON \
       ${QGIS}
 make $@
 make install
