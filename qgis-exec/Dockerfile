@@ -9,7 +9,9 @@ COPY deb/libqgis-analysis*.deb \
      deb/libqgis-native*.deb \
      deb/libqgispython*.deb \
      deb/libqgis-server*.deb \
+     deb/libqgis-3d*.deb \
      deb/python-qgis*.deb \
+     deb/python3-qgis*.deb \
      deb/qgis-common*.deb \
      deb/qgis-providers*.deb \
      deb/qgis-server*.deb \

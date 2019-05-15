@@ -21,6 +21,9 @@ cd /qgis/QGIS
 dch -l ~${DIST} --force-distribution --distribution ${DIST} "${DIST} build"
 dpkg-buildpackage -us -uc -b $@
 if [[ -n "$USER" ]]; then
-    chown $USER /qgis/oracle-*deb /qgis/qgis*deb /qgis/libqgis*deb /qgis/qgis*buildinfo /qgis/qgis*changes /qgis/python*deb
+    chown $USER /qgis/qgis*deb /qgis/libqgis*deb /qgis/qgis*buildinfo /qgis/qgis*changes /qgis/python*deb
+    if [[ "${BUILD_ORACLE_PROVIDER}" = "y" ]]; then
+        chown $USER /qgis/oracle-*deb
+    fi
 fi
 exit 0
