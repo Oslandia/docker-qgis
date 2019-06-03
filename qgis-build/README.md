@@ -77,7 +77,7 @@ Prior to executing `/build.sh` the environment variable `BUILD_TYPE` may be set
 set the build type defaults to `Release`. When set to `Debug` the resulting compilation artifacts
 will include debug information.
 
-### Debugging QGIS Server
+### Running and debugging QGIS Server
 
 After a sucessful compilation and installation of QGIS (in `/qgis/install`) a new `qgis-build`
 container can be created for debugging QGIS Server.
@@ -93,7 +93,14 @@ $ docker run -it --rm -v $(pwd):/qgis v $HOME/qgis-data:/data -u 0 -e LD_LIBRARY
 * `--network host` is used for QGIS to be able to access a database system running on the host machine
 * `--cap-add=SYS_PTRACE` and `--security-opt seccomp=unconfined` are required for executing `gdb`
 
-Now to run QGIS Server with `gdb`:
+To execute QGIS Server with `spawn-fcgi`:
+
+```shell
+# export QGIS_PROJECT_FILE=/data/eleonore.qgs
+# /usr/bin/xvfb-run --auto-servernum --server-num=1 /usr/bin/spawn-fcgi -p 5555 -n -d /root -- /qgis/install/bin/qgis_mapserv.fcgi
+```
+
+And to run QGIS Server with `gdb`:
 
 ```shell
 # /usr/bin/xvfb-run --auto-servernum --server-num=5 gdb /qgis/install/bin/qgis_mapserv.fcgi
