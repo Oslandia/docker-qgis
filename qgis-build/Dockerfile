@@ -104,6 +104,12 @@ RUN apt-get update \
         xvfb \
     && rm -rf /var/lib/apt/lists/*
 
+# Add tini. This is to be able, after compilation, to use the build container as a
+# container for executing QGIS Server
+ENV TINI_VERSION v0.17.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+RUN chmod +x /tini
+
 COPY build.sh build-debs.sh /
 RUN chmod a+x /build.sh /build-debs.sh
 
