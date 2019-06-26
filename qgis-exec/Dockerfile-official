@@ -10,6 +10,7 @@ RUN apt-get update \
     && echo "deb http://qgis.org/debian stretch main" >> /etc/apt/sources.list.d/qgis.list \
     && apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y \
+        fcgiwrap \
         multiwatch \
         qgis-server \
         spawn-fcgi \
