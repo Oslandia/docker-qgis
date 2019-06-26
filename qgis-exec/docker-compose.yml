@@ -2,25 +2,25 @@ version: '2'
 services:
   nginx:
     image: nginx:1.13
-    ports:
-    - 8080:80
-    networks:
-    - qgis
+    network_mode: host
     volumes:
     - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
     - ./map.html:/usr/share/nginx/html/index.html:ro
     depends_on:
     - qgis-exec
   qgis-exec:
-    image: qgis-exec:latest
-    networks:
-    - qgis
+    image: qgis-exec-2:latest
+    network_mode: host
     volumes:
     - ./data:/data:ro
+    #- /home/elemoine/.pgpass:/home/qgis/.pgpass:ro
+    entrypoint:
+    - "/tini"
+    - "--"
+    command: /usr/bin/xvfb-run --auto-servernum --server-num=1 /usr/bin/spawn-fcgi -p 5555 -n -d /root -- /usr/local/bin/qgis_mapserv.fcgi
     environment:
-    - QGIS_PROJECT_FILE=/data/osm.qgs
+    - QGIS_PREFIX_PATH=/usr/local
     - QGIS_SERVER_LOG_LEVEL=0  # INFO (log all requests)
     - PROCESSES=1
     - DEBUG=1                  # display env before spawning QGIS Server
-networks:
-  qgis: {}
+    - QGIS_DEBUG=5
