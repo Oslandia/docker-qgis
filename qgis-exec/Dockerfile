@@ -38,7 +38,8 @@ ENV QGIS_SERVER_LOG_LEVEL 2
 
 ENV PROCESSES 1
 
-COPY --chown=qgis:qgis cmd.sh /home/qgis/cmd.sh
+COPY cmd.sh /home/qgis/cmd.sh
+RUN chown qgis:qgis /home/qgis/cmd.sh
 
 USER qgis
 WORKDIR /home/qgis
