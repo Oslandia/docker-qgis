@@ -14,15 +14,19 @@ $ git clone https://github.com/Oslandia/docker-qgis
 $ cd docker-qgis/qgis-exec
 ```
 
-The `qgis-exec` directory actually includes two Dockerfiles: `Dockerfile` and `Dockerfile-official`.
-With `Dockerfile-official` official QGIS packages from http://qgis.org/debian/ are used.  With
-`Dockerfile` local packages (generated using a `qgis-build` container) are used.
+The `qgis-exec` directory actually includes multiple Dockerfiles: `Dockerfile` and
+`Dockerfile-jessie` and `Dockerfile-buster`.  With `Dockerfile-jessie` and `Dockerfile-buster`
+official QGIS packages from http://qgis.org/debian/ are used.  With `Dockerfile` local packages
+(generated using a `qgis-build` container) are used.
 
 Build the image using official QGIS packages:
 
 ```shell
-$ docker build -f Dockerfile-official -t qgis-exec .
+$ docker build -f Dockerfile-buster -t qgis-exec .
 ```
+
+When using `Dockerfile-buster` QGIS 3.8 is installed in the image. You can use `Dockerfile-jessie`
+if you want QGIS 3.4, although using `Dockerfile-buster` is recommended.
 
 To build the image using local packages requires copying the packages (the `.deb` files) to a `deb`
 directory located in this directory:
