@@ -38,6 +38,8 @@ RUN chown qgis:qgis /home/qgis/cmd.sh
 USER qgis
 WORKDIR /home/qgis
 
+EXPOSE 8080
+
 ENTRYPOINT ["/tini", "--"]
 
 CMD ["/home/qgis/cmd.sh"]

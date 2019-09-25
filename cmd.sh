@@ -8,4 +8,4 @@ else
     MULTIWATCH=""
 fi
 
-exec /usr/bin/xvfb-run --auto-servernum --server-num=1 /usr/bin/spawn-fcgi -p 5555 -n -d /home/qgis -- $MULTIWATCH /usr/lib/cgi-bin/qgis_mapserv.fcgi
+exec /usr/bin/xvfb-run --auto-servernum --server-num=1 /usr/bin/spawn-fcgi -p 8080 -n -d /home/qgis -- $MULTIWATCH /usr/lib/cgi-bin/qgis_mapserv.fcgi
