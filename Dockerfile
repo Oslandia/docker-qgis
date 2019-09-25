@@ -29,9 +29,12 @@ RUN chmod +x /tini
 ENV QGIS_PREFIX_PATH /usr
 ENV QGIS_SERVER_LOG_STDERR 1
 ENV QGIS_SERVER_LOG_LEVEL 2
+ENV QGSI_PROJECT_FILE /home/qgis/clever.qgs
 
 ENV PROCESSES 1
 
+COPY clever.qgs /home/qgis/clever.qgs
+RUN chown qgis:qgis /home/qgis/clever.qgs
 COPY cmd.sh /home/qgis/cmd.sh
 RUN chown qgis:qgis /home/qgis/cmd.sh
 
