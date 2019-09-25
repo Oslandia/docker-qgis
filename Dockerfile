@@ -1,29 +1,23 @@
 FROM debian:buster-slim
 
-COPY deb/libqgis-analysis*.deb \
-     deb/libqgis-app*.deb \
-     deb/libqgis-core*.deb \
-     deb/libqgis-customwidgets*.deb \
-     deb/libqgisgrass7*.deb \
-     deb/libqgis-gui*.deb \
-     deb/libqgis-native*.deb \
-     deb/libqgispython*.deb \
-     deb/libqgis-server*.deb \
-     deb/libqgis-3d*.deb \
-     deb/python-qgis*.deb \
-     deb/python3-qgis*.deb \
-     deb/qgis-common*.deb \
-     deb/qgis-providers*.deb \
-     deb/qgis-server*.deb \
-     /qgis/
-
 RUN apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y \
+        gnupg \
+        ca-certificates \
+        wget \
+    && wget -O - https://qgis.org/downloads/qgis-2019.gpg.key | gpg --import \
+    && gpg --export --armor 8D5A5B203548E5004487DD1951F523511C7028C3 | apt-key add - \
+    && echo "deb http://qgis.org/debian buster main" >> /etc/apt/sources.list.d/qgis.list \
+    && apt-get update \
+    && apt-get install --no-install-recommends --no-install-suggests -y \
         multiwatch \
+        qgis-server \
         spawn-fcgi \
         xauth \
         xvfb \
-    && apt install --no-install-recommends --no-install-suggests -y /qgis/*.deb \
+    && apt-get remove --purge -y \
+        gnupg \
+        wget \
     && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -m qgis
