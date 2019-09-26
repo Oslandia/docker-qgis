@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.4.4-Madeira" projectname="">
+<qgis projectname="" version="3.4.4-Madeira">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -19,66 +19,81 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer name="osm_housenumbers" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=Point table=&quot;import&quot;.&quot;osm_housenumbers&quot; (geometry) sql=" expanded="1" checked="Qt::Checked" id="osm_housenumbers_9f65cb58_6b5e_4a26_9000_9efb5aa93420" providerKey="postgres">
+    <layer-tree-layer checked="Qt::Unchecked" id="osm_aeroways_418a585d_6d71_4051_93b2_4ae8144d0c83" providerKey="postgres" name="osm_aeroways" expanded="1" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=LineString table=&quot;import&quot;.&quot;osm_aeroways&quot; (geometry) sql=">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="osm_housenumbers_interpolated" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=LineString table=&quot;import&quot;.&quot;osm_housenumbers_interpolated&quot; (geometry) sql=" expanded="1" checked="Qt::Checked" id="osm_housenumbers_interpolated_ee160387_33f8_49c9_9767_d0b5703a72f8" providerKey="postgres">
+    <layer-tree-layer checked="Qt::Checked" id="osm_buildings_622ea9ab_4cde_4ee2_8fef_7a6556da090a" providerKey="postgres" name="osm_buildings" expanded="1" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=MultiPolygon table=&quot;import&quot;.&quot;osm_buildings&quot; (geometry) sql=">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="osm_aeroways" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=LineString table=&quot;import&quot;.&quot;osm_aeroways&quot; (geometry) sql=" expanded="1" checked="Qt::Checked" id="osm_aeroways_9f1d47f1_5ff9_4916_ad6b_505c6bedb77f" providerKey="postgres">
+    <layer-tree-layer checked="Qt::Checked" id="osm_waterareas_6ee50474_d111_469b_96e8_d00458fe52a9" providerKey="postgres" name="osm_waterareas" expanded="1" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=MultiPolygon table=&quot;import&quot;.&quot;osm_waterareas&quot; (geometry) sql=">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="osm_amenities" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=Point table=&quot;import&quot;.&quot;osm_amenities&quot; (geometry) sql=" expanded="1" checked="Qt::Checked" id="osm_amenities_043584da_9aa4_44bf_a250_547b1a8dd353" providerKey="postgres">
+    <layer-tree-layer checked="Qt::Checked" id="osm_waterways_d73ec725_7a9d_4c95_85a6_762d2f619e45" providerKey="postgres" name="osm_waterways" expanded="1" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=LineString table=&quot;import&quot;.&quot;osm_waterways&quot; (geometry) sql=">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="osm_barrierpoints" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=Point table=&quot;import&quot;.&quot;osm_barrierpoints&quot; (geometry) sql=" expanded="1" checked="Qt::Checked" id="osm_barrierpoints_71bacf73_cc1d_4243_aa30_a3a9529b63a6" providerKey="postgres">
+    <layer-tree-layer checked="Qt::Unchecked" id="osm_transport_points_e8fc4dd1_672b_4f8a_b6ab_5ba919030ec0" providerKey="postgres" name="osm_transport_points" expanded="1" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=Point table=&quot;import&quot;.&quot;osm_transport_points&quot; (geometry) sql=">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="osm_barrierways" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=LineString table=&quot;import&quot;.&quot;osm_barrierways&quot; (geometry) sql=" expanded="1" checked="Qt::Checked" id="osm_barrierways_362e2361_5fe3_4710_b4f3_5ce23ce22ebe" providerKey="postgres">
+    <layer-tree-layer checked="Qt::Checked" id="osm_roads_7da190c0_0fb7_4b00_b0a5_90e60673ea9a" providerKey="postgres" name="osm_roads" expanded="1" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=LineString table=&quot;import&quot;.&quot;osm_roads&quot; (geometry) sql=">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="osm_buildings" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=MultiPolygon table=&quot;import&quot;.&quot;osm_buildings&quot; (geometry) sql=" expanded="1" checked="Qt::Checked" id="osm_buildings_4a21b4c4_f276_4397_a400_ade68d25e6d5" providerKey="postgres">
+    <layer-tree-layer checked="Qt::Unchecked" id="osm_places_b56f391a_2cf9_4b1e_a0bc_ca7cc527cb4e" providerKey="postgres" name="osm_places" expanded="1" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=Point table=&quot;import&quot;.&quot;osm_places&quot; (geometry) sql=">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="osm_landusages" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=MultiPolygon table=&quot;import&quot;.&quot;osm_landusages&quot; (geometry) sql=" expanded="1" checked="Qt::Checked" id="osm_landusages_56c50a71_a28d_43ed_88e6_0d0902f84347" providerKey="postgres">
+    <layer-tree-layer checked="Qt::Unchecked" id="osm_housenumbers_interpolated_014a612d_a7bb_4b69_83df_cab87b1e814f" providerKey="postgres" name="osm_housenumbers_interpolated" expanded="1" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=LineString table=&quot;import&quot;.&quot;osm_housenumbers_interpolated&quot; (geometry) sql=">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="osm_roads" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=LineString table=&quot;import&quot;.&quot;osm_roads&quot; (geometry) sql=" expanded="1" checked="Qt::Checked" id="osm_roads_ff8e6980_5b60_4916_abf3_f4960a2a8732" providerKey="postgres">
+    <layer-tree-layer checked="Qt::Unchecked" id="osm_barrierways_9aff859d_fbdc_47cf_8b29_21c0cb43c5ca" providerKey="postgres" name="osm_barrierways" expanded="1" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=LineString table=&quot;import&quot;.&quot;osm_barrierways&quot; (geometry) sql=">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer checked="Qt::Unchecked" id="osm_housenumbers_8b0dc05c_e32c_4763_a0fd_56ce32a2fecd" providerKey="postgres" name="osm_housenumbers" expanded="1" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=Point table=&quot;import&quot;.&quot;osm_housenumbers&quot; (geometry) sql=">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer checked="Qt::Unchecked" id="osm_barrierpoints_06cd79af_ba54_4139_9dfe_ebf593a39552" providerKey="postgres" name="osm_barrierpoints" expanded="1" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=Point table=&quot;import&quot;.&quot;osm_barrierpoints&quot; (geometry) sql=">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer checked="Qt::Unchecked" id="osm_amenities_8a1be495_215f_4b5d_952a_f0e9ca9cf4d0" providerKey="postgres" name="osm_amenities" expanded="1" source="dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=Point table=&quot;import&quot;.&quot;osm_amenities&quot; (geometry) sql=">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
-      <item>osm_housenumbers_9f65cb58_6b5e_4a26_9000_9efb5aa93420</item>
-      <item>osm_housenumbers_interpolated_ee160387_33f8_49c9_9767_d0b5703a72f8</item>
-      <item>osm_aeroways_9f1d47f1_5ff9_4916_ad6b_505c6bedb77f</item>
-      <item>osm_amenities_043584da_9aa4_44bf_a250_547b1a8dd353</item>
-      <item>osm_barrierpoints_71bacf73_cc1d_4243_aa30_a3a9529b63a6</item>
-      <item>osm_barrierways_362e2361_5fe3_4710_b4f3_5ce23ce22ebe</item>
-      <item>osm_buildings_4a21b4c4_f276_4397_a400_ade68d25e6d5</item>
-      <item>osm_landusages_56c50a71_a28d_43ed_88e6_0d0902f84347</item>
-      <item>osm_roads_ff8e6980_5b60_4916_abf3_f4960a2a8732</item>
+      <item>osm_aeroways_418a585d_6d71_4051_93b2_4ae8144d0c83</item>
+      <item>osm_waterways_d73ec725_7a9d_4c95_85a6_762d2f619e45</item>
+      <item>osm_transport_points_e8fc4dd1_672b_4f8a_b6ab_5ba919030ec0</item>
+      <item>osm_roads_7da190c0_0fb7_4b00_b0a5_90e60673ea9a</item>
+      <item>osm_places_b56f391a_2cf9_4b1e_a0bc_ca7cc527cb4e</item>
+      <item>osm_housenumbers_interpolated_014a612d_a7bb_4b69_83df_cab87b1e814f</item>
+      <item>osm_barrierways_9aff859d_fbdc_47cf_8b29_21c0cb43c5ca</item>
+      <item>osm_housenumbers_8b0dc05c_e32c_4763_a0fd_56ce32a2fecd</item>
+      <item>osm_barrierpoints_06cd79af_ba54_4139_9dfe_ebf593a39552</item>
+      <item>osm_amenities_8a1be495_215f_4b5d_952a_f0e9ca9cf4d0</item>
+      <item>osm_buildings_622ea9ab_4cde_4ee2_8fef_7a6556da090a</item>
+      <item>osm_waterareas_6ee50474_d111_469b_96e8_d00458fe52a9</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings enabled="0" intersection-snapping="0" tolerance="12" unit="1" mode="2" type="1">
+  <snapping-settings type="1" intersection-snapping="0" unit="1" tolerance="12" mode="2" enabled="0">
     <individual-layer-settings>
-      <layer-setting enabled="0" units="1" id="osm_barrierpoints_71bacf73_cc1d_4243_aa30_a3a9529b63a6" tolerance="12" type="1"/>
-      <layer-setting enabled="0" units="1" id="osm_roads_ff8e6980_5b60_4916_abf3_f4960a2a8732" tolerance="12" type="1"/>
-      <layer-setting enabled="0" units="1" id="osm_housenumbers_9f65cb58_6b5e_4a26_9000_9efb5aa93420" tolerance="12" type="1"/>
-      <layer-setting enabled="0" units="1" id="osm_buildings_4a21b4c4_f276_4397_a400_ade68d25e6d5" tolerance="12" type="1"/>
-      <layer-setting enabled="0" units="1" id="osm_aeroways_9f1d47f1_5ff9_4916_ad6b_505c6bedb77f" tolerance="12" type="1"/>
-      <layer-setting enabled="0" units="1" id="osm_amenities_043584da_9aa4_44bf_a250_547b1a8dd353" tolerance="12" type="1"/>
-      <layer-setting enabled="0" units="1" id="osm_barrierways_362e2361_5fe3_4710_b4f3_5ce23ce22ebe" tolerance="12" type="1"/>
-      <layer-setting enabled="0" units="1" id="osm_landusages_56c50a71_a28d_43ed_88e6_0d0902f84347" tolerance="12" type="1"/>
-      <layer-setting enabled="0" units="1" id="osm_housenumbers_interpolated_ee160387_33f8_49c9_9767_d0b5703a72f8" tolerance="12" type="1"/>
+      <layer-setting id="osm_waterareas_6ee50474_d111_469b_96e8_d00458fe52a9" units="1" type="1" tolerance="12" enabled="0"/>
+      <layer-setting id="osm_barrierways_9aff859d_fbdc_47cf_8b29_21c0cb43c5ca" units="1" type="1" tolerance="12" enabled="0"/>
+      <layer-setting id="osm_transport_points_e8fc4dd1_672b_4f8a_b6ab_5ba919030ec0" units="1" type="1" tolerance="12" enabled="0"/>
+      <layer-setting id="osm_places_b56f391a_2cf9_4b1e_a0bc_ca7cc527cb4e" units="1" type="1" tolerance="12" enabled="0"/>
+      <layer-setting id="osm_housenumbers_interpolated_014a612d_a7bb_4b69_83df_cab87b1e814f" units="1" type="1" tolerance="12" enabled="0"/>
+      <layer-setting id="osm_housenumbers_8b0dc05c_e32c_4763_a0fd_56ce32a2fecd" units="1" type="1" tolerance="12" enabled="0"/>
+      <layer-setting id="osm_buildings_622ea9ab_4cde_4ee2_8fef_7a6556da090a" units="1" type="1" tolerance="12" enabled="0"/>
+      <layer-setting id="osm_roads_7da190c0_0fb7_4b00_b0a5_90e60673ea9a" units="1" type="1" tolerance="12" enabled="0"/>
+      <layer-setting id="osm_aeroways_418a585d_6d71_4051_93b2_4ae8144d0c83" units="1" type="1" tolerance="12" enabled="0"/>
+      <layer-setting id="osm_waterways_d73ec725_7a9d_4c95_85a6_762d2f619e45" units="1" type="1" tolerance="12" enabled="0"/>
+      <layer-setting id="osm_barrierpoints_06cd79af_ba54_4139_9dfe_ebf593a39552" units="1" type="1" tolerance="12" enabled="0"/>
+      <layer-setting id="osm_amenities_8a1be495_215f_4b5d_952a_f0e9ca9cf4d0" units="1" type="1" tolerance="12" enabled="0"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
   <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>meters</units>
     <extent>
-      <xmin>102296.80020136089297011</xmin>
-      <ymin>5732697.87200333084911108</ymin>
-      <xmax>171776.29225889296503738</xmax>
-      <ymax>5785917.11615921463817358</ymax>
+      <xmin>137268.33650441549252719</xmin>
+      <ymin>5747382.25956920627504587</ymin>
+      <xmax>143795.43806531169684604</xmax>
+      <ymax>5758924.06056722719222307</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -97,49 +112,64 @@
   </mapcanvas>
   <projectModels/>
   <legend updateDrawingOrder="true">
-    <legendlayer name="osm_housenumbers" drawingOrder="-1" open="true" checked="Qt::Checked" showFeatureCount="0">
-      <filegroup hidden="false" open="true">
-        <legendlayerfile isInOverview="0" layerid="osm_housenumbers_9f65cb58_6b5e_4a26_9000_9efb5aa93420" visible="1"/>
+    <legendlayer checked="Qt::Unchecked" open="true" name="osm_aeroways" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="0" layerid="osm_aeroways_418a585d_6d71_4051_93b2_4ae8144d0c83"/>
       </filegroup>
     </legendlayer>
-    <legendlayer name="osm_housenumbers_interpolated" drawingOrder="-1" open="true" checked="Qt::Checked" showFeatureCount="0">
-      <filegroup hidden="false" open="true">
-        <legendlayerfile isInOverview="0" layerid="osm_housenumbers_interpolated_ee160387_33f8_49c9_9767_d0b5703a72f8" visible="1"/>
+    <legendlayer checked="Qt::Checked" open="true" name="osm_buildings" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="osm_buildings_622ea9ab_4cde_4ee2_8fef_7a6556da090a"/>
       </filegroup>
     </legendlayer>
-    <legendlayer name="osm_aeroways" drawingOrder="-1" open="true" checked="Qt::Checked" showFeatureCount="0">
-      <filegroup hidden="false" open="true">
-        <legendlayerfile isInOverview="0" layerid="osm_aeroways_9f1d47f1_5ff9_4916_ad6b_505c6bedb77f" visible="1"/>
+    <legendlayer checked="Qt::Checked" open="true" name="osm_waterareas" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="osm_waterareas_6ee50474_d111_469b_96e8_d00458fe52a9"/>
       </filegroup>
     </legendlayer>
-    <legendlayer name="osm_amenities" drawingOrder="-1" open="true" checked="Qt::Checked" showFeatureCount="0">
-      <filegroup hidden="false" open="true">
-        <legendlayerfile isInOverview="0" layerid="osm_amenities_043584da_9aa4_44bf_a250_547b1a8dd353" visible="1"/>
+    <legendlayer checked="Qt::Checked" open="true" name="osm_waterways" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="osm_waterways_d73ec725_7a9d_4c95_85a6_762d2f619e45"/>
       </filegroup>
     </legendlayer>
-    <legendlayer name="osm_barrierpoints" drawingOrder="-1" open="true" checked="Qt::Checked" showFeatureCount="0">
-      <filegroup hidden="false" open="true">
-        <legendlayerfile isInOverview="0" layerid="osm_barrierpoints_71bacf73_cc1d_4243_aa30_a3a9529b63a6" visible="1"/>
+    <legendlayer checked="Qt::Unchecked" open="true" name="osm_transport_points" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="0" layerid="osm_transport_points_e8fc4dd1_672b_4f8a_b6ab_5ba919030ec0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer name="osm_barrierways" drawingOrder="-1" open="true" checked="Qt::Checked" showFeatureCount="0">
-      <filegroup hidden="false" open="true">
-        <legendlayerfile isInOverview="0" layerid="osm_barrierways_362e2361_5fe3_4710_b4f3_5ce23ce22ebe" visible="1"/>
+    <legendlayer checked="Qt::Checked" open="true" name="osm_roads" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="osm_roads_7da190c0_0fb7_4b00_b0a5_90e60673ea9a"/>
       </filegroup>
     </legendlayer>
-    <legendlayer name="osm_buildings" drawingOrder="-1" open="true" checked="Qt::Checked" showFeatureCount="0">
-      <filegroup hidden="false" open="true">
-        <legendlayerfile isInOverview="0" layerid="osm_buildings_4a21b4c4_f276_4397_a400_ade68d25e6d5" visible="1"/>
+    <legendlayer checked="Qt::Unchecked" open="true" name="osm_places" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="0" layerid="osm_places_b56f391a_2cf9_4b1e_a0bc_ca7cc527cb4e"/>
       </filegroup>
     </legendlayer>
-    <legendlayer name="osm_landusages" drawingOrder="-1" open="true" checked="Qt::Checked" showFeatureCount="0">
-      <filegroup hidden="false" open="true">
-        <legendlayerfile isInOverview="0" layerid="osm_landusages_56c50a71_a28d_43ed_88e6_0d0902f84347" visible="1"/>
+    <legendlayer checked="Qt::Unchecked" open="true" name="osm_housenumbers_interpolated" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="0" layerid="osm_housenumbers_interpolated_014a612d_a7bb_4b69_83df_cab87b1e814f"/>
       </filegroup>
     </legendlayer>
-    <legendlayer name="osm_roads" drawingOrder="-1" open="true" checked="Qt::Checked" showFeatureCount="0">
-      <filegroup hidden="false" open="true">
-        <legendlayerfile isInOverview="0" layerid="osm_roads_ff8e6980_5b60_4916_abf3_f4960a2a8732" visible="1"/>
+    <legendlayer checked="Qt::Unchecked" open="true" name="osm_barrierways" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="0" layerid="osm_barrierways_9aff859d_fbdc_47cf_8b29_21c0cb43c5ca"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer checked="Qt::Unchecked" open="true" name="osm_housenumbers" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="0" layerid="osm_housenumbers_8b0dc05c_e32c_4763_a0fd_56ce32a2fecd"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer checked="Qt::Unchecked" open="true" name="osm_barrierpoints" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="0" layerid="osm_barrierpoints_06cd79af_ba54_4139_9dfe_ebf593a39552"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer checked="Qt::Unchecked" open="true" name="osm_amenities" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="0" layerid="osm_amenities_8a1be495_215f_4b5d_952a_f0e9ca9cf4d0"/>
       </filegroup>
     </legendlayer>
   </legend>
@@ -215,15 +245,15 @@
     <rendermaptile>0</rendermaptile>
   </mapcanvas>
   <projectlayers>
-    <maplayer maxScale="0" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshEnabled="0" geometry="Line" simplifyAlgorithm="0" simplifyLocal="1" autoRefreshTime="0" simplifyDrawingTol="1" simplifyMaxScale="1" labelsEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1">
+    <maplayer autoRefreshEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshTime="0" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" refreshOnNotifyEnabled="0" simplifyLocal="1" readOnly="0" geometry="Line" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingTol="1">
       <extent>
         <xmin>74455.11008203119854443</xmin>
         <ymin>5627217.61288763023912907</ymin>
         <xmax>270869.78621875197859481</xmax>
         <ymax>5833939.14477261994034052</ymax>
       </extent>
-      <id>osm_aeroways_9f1d47f1_5ff9_4916_ad6b_505c6bedb77f</id>
-      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=LineString table="import"."osm_aeroways" (geometry) sql=</datasource>
+      <id>osm_aeroways_418a585d_6d71_4051_93b2_4ae8144d0c83</id>
+      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' password='EvLFavmNuEI3qw6nD42u' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=LineString table="import"."osm_aeroways" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -279,10 +309,10 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0">
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol name="0" clip_to_extent="1" alpha="1" force_rhr="0" type="line">
-            <layer enabled="1" locked="0" class="SimpleLine" pass="0">
+          <symbol type="line" name="0" clip_to_extent="1" alpha="1" force_rhr="0">
+            <layer pass="0" class="SimpleLine" enabled="1" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -301,9 +331,9 @@
               <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -316,7 +346,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks/>
         <checkConfiguration/>
       </geometryOptions>
@@ -351,33 +381,35 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="id" index="0"/>
-        <alias name="" field="osm_id" index="1"/>
-        <alias name="" field="name" index="2"/>
-        <alias name="" field="type" index="3"/>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="osm_id"/>
+        <alias name="" index="2" field="name"/>
+        <alias name="" index="3" field="type"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="id" expression="" applyOnUpdate="0"/>
-        <default field="osm_id" expression="" applyOnUpdate="0"/>
-        <default field="name" expression="" applyOnUpdate="0"/>
-        <default field="type" expression="" applyOnUpdate="0"/>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
       </defaults>
       <constraints>
-        <constraint field="id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="osm_id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="name" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="type" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="id" notnull_strength="1"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="osm_id" notnull_strength="1"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="type" notnull_strength="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" exp="" desc=""/>
-        <constraint field="osm_id" exp="" desc=""/>
-        <constraint field="name" exp="" desc=""/>
-        <constraint field="type" exp="" desc=""/>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="type" exp=""/>
       </constraintExpressions>
       <expressionfields/>
-      <attributeactions/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
       <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns/>
       </attributetableconfig>
@@ -398,15 +430,15 @@
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer maxScale="0" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshEnabled="0" geometry="Point" simplifyAlgorithm="0" simplifyLocal="1" autoRefreshTime="0" simplifyDrawingTol="1" simplifyMaxScale="1" labelsEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1">
+    <maplayer autoRefreshEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshTime="0" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" refreshOnNotifyEnabled="0" simplifyLocal="1" readOnly="0" geometry="Point" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingTol="1">
       <extent>
         <xmin>82132.2890625</xmin>
         <ymin>5617363</ymin>
         <xmax>279785.96875</xmax>
         <ymax>5847916</ymax>
       </extent>
-      <id>osm_amenities_043584da_9aa4_44bf_a250_547b1a8dd353</id>
-      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=Point table="import"."osm_amenities" (geometry) sql=</datasource>
+      <id>osm_amenities_8a1be495_215f_4b5d_952a_f0e9ca9cf4d0</id>
+      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' password='EvLFavmNuEI3qw6nD42u' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=Point table="import"."osm_amenities" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -462,12 +494,12 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0">
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol name="0" clip_to_extent="1" alpha="1" force_rhr="0" type="marker">
-            <layer enabled="1" locked="0" class="SimpleMarker" pass="0">
+          <symbol type="marker" name="0" clip_to_extent="1" alpha="1" force_rhr="0">
+            <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="190,178,151,255"/>
+              <prop k="color" v="141,90,153,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
@@ -486,9 +518,9 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -501,7 +533,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks/>
         <checkConfiguration/>
       </geometryOptions>
@@ -536,30 +568,30 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="id" index="0"/>
-        <alias name="" field="osm_id" index="1"/>
-        <alias name="" field="name" index="2"/>
-        <alias name="" field="type" index="3"/>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="osm_id"/>
+        <alias name="" index="2" field="name"/>
+        <alias name="" index="3" field="type"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="id" expression="" applyOnUpdate="0"/>
-        <default field="osm_id" expression="" applyOnUpdate="0"/>
-        <default field="name" expression="" applyOnUpdate="0"/>
-        <default field="type" expression="" applyOnUpdate="0"/>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
       </defaults>
       <constraints>
-        <constraint field="id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="osm_id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="name" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="type" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="id" notnull_strength="1"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="osm_id" notnull_strength="1"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="type" notnull_strength="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" exp="" desc=""/>
-        <constraint field="osm_id" exp="" desc=""/>
-        <constraint field="name" exp="" desc=""/>
-        <constraint field="type" exp="" desc=""/>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="type" exp=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions/>
@@ -583,15 +615,15 @@
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer maxScale="0" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshEnabled="0" geometry="Point" simplifyAlgorithm="0" simplifyLocal="1" autoRefreshTime="0" simplifyDrawingTol="1" simplifyMaxScale="1" labelsEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1">
+    <maplayer autoRefreshEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshTime="0" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" refreshOnNotifyEnabled="0" simplifyLocal="1" readOnly="0" geometry="Point" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingTol="1">
       <extent>
         <xmin>78873.703125</xmin>
         <ymin>5614069.5</ymin>
         <xmax>285178.4375</xmax>
         <ymax>5850543.5</ymax>
       </extent>
-      <id>osm_barrierpoints_71bacf73_cc1d_4243_aa30_a3a9529b63a6</id>
-      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=Point table="import"."osm_barrierpoints" (geometry) sql=</datasource>
+      <id>osm_barrierpoints_06cd79af_ba54_4139_9dfe_ebf593a39552</id>
+      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' password='EvLFavmNuEI3qw6nD42u' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=Point table="import"."osm_barrierpoints" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -647,12 +679,12 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0">
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol name="0" clip_to_extent="1" alpha="1" force_rhr="0" type="marker">
-            <layer enabled="1" locked="0" class="SimpleMarker" pass="0">
+          <symbol type="marker" name="0" clip_to_extent="1" alpha="1" force_rhr="0">
+            <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="145,82,45,255"/>
+              <prop k="color" v="232,113,141,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
@@ -671,9 +703,9 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -686,7 +718,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks/>
         <checkConfiguration/>
       </geometryOptions>
@@ -721,33 +753,35 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="id" index="0"/>
-        <alias name="" field="osm_id" index="1"/>
-        <alias name="" field="name" index="2"/>
-        <alias name="" field="type" index="3"/>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="osm_id"/>
+        <alias name="" index="2" field="name"/>
+        <alias name="" index="3" field="type"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="id" expression="" applyOnUpdate="0"/>
-        <default field="osm_id" expression="" applyOnUpdate="0"/>
-        <default field="name" expression="" applyOnUpdate="0"/>
-        <default field="type" expression="" applyOnUpdate="0"/>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
       </defaults>
       <constraints>
-        <constraint field="id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="osm_id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="name" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="type" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="id" notnull_strength="1"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="osm_id" notnull_strength="1"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="type" notnull_strength="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" exp="" desc=""/>
-        <constraint field="osm_id" exp="" desc=""/>
-        <constraint field="name" exp="" desc=""/>
-        <constraint field="type" exp="" desc=""/>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="type" exp=""/>
       </constraintExpressions>
       <expressionfields/>
-      <attributeactions/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
       <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns/>
       </attributetableconfig>
@@ -768,15 +802,15 @@
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer maxScale="0" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshEnabled="0" geometry="Line" simplifyAlgorithm="0" simplifyLocal="1" autoRefreshTime="0" simplifyDrawingTol="1" simplifyMaxScale="1" labelsEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1">
+    <maplayer autoRefreshEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshTime="0" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" refreshOnNotifyEnabled="0" simplifyLocal="1" readOnly="0" geometry="Line" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingTol="1">
       <extent>
         <xmin>69873.5390625</xmin>
         <ymin>5614154</ymin>
         <xmax>288848.65625</xmax>
         <ymax>5849997</ymax>
       </extent>
-      <id>osm_barrierways_362e2361_5fe3_4710_b4f3_5ce23ce22ebe</id>
-      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=LineString table="import"."osm_barrierways" (geometry) sql=</datasource>
+      <id>osm_barrierways_9aff859d_fbdc_47cf_8b29_21c0cb43c5ca</id>
+      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' password='EvLFavmNuEI3qw6nD42u' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=LineString table="import"."osm_barrierways" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -832,17 +866,17 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0">
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol name="0" clip_to_extent="1" alpha="1" force_rhr="0" type="line">
-            <layer enabled="1" locked="0" class="SimpleLine" pass="0">
+          <symbol type="line" name="0" clip_to_extent="1" alpha="1" force_rhr="0">
+            <layer pass="0" class="SimpleLine" enabled="1" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="125,139,143,255"/>
+              <prop k="line_color" v="183,72,75,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -854,9 +888,9 @@
               <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -869,7 +903,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks/>
         <checkConfiguration/>
       </geometryOptions>
@@ -904,30 +938,30 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="id" index="0"/>
-        <alias name="" field="osm_id" index="1"/>
-        <alias name="" field="name" index="2"/>
-        <alias name="" field="type" index="3"/>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="osm_id"/>
+        <alias name="" index="2" field="name"/>
+        <alias name="" index="3" field="type"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="id" expression="" applyOnUpdate="0"/>
-        <default field="osm_id" expression="" applyOnUpdate="0"/>
-        <default field="name" expression="" applyOnUpdate="0"/>
-        <default field="type" expression="" applyOnUpdate="0"/>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
       </defaults>
       <constraints>
-        <constraint field="id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="osm_id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="name" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="type" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="id" notnull_strength="1"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="osm_id" notnull_strength="1"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="type" notnull_strength="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" exp="" desc=""/>
-        <constraint field="osm_id" exp="" desc=""/>
-        <constraint field="name" exp="" desc=""/>
-        <constraint field="type" exp="" desc=""/>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="type" exp=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions/>
@@ -951,15 +985,15 @@
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer maxScale="0" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshEnabled="0" geometry="Polygon" simplifyAlgorithm="0" simplifyLocal="1" autoRefreshTime="0" simplifyDrawingTol="1" simplifyMaxScale="1" labelsEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1">
+    <maplayer autoRefreshEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshTime="0" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" refreshOnNotifyEnabled="0" simplifyLocal="1" readOnly="0" geometry="Polygon" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingTol="1">
       <extent>
         <xmin>69819.1328125</xmin>
         <ymin>5608826</ymin>
         <xmax>289916.4375</xmax>
         <ymax>5853739</ymax>
       </extent>
-      <id>osm_buildings_4a21b4c4_f276_4397_a400_ade68d25e6d5</id>
-      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=MultiPolygon table="import"."osm_buildings" (geometry) sql=</datasource>
+      <id>osm_buildings_622ea9ab_4cde_4ee2_8fef_7a6556da090a</id>
+      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' password='EvLFavmNuEI3qw6nD42u' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=MultiPolygon table="import"."osm_buildings" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1015,12 +1049,12 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0">
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol name="0" clip_to_extent="1" alpha="1" force_rhr="0" type="fill">
-            <layer enabled="1" locked="0" class="SimpleFill" pass="0">
+          <symbol type="fill" name="0" clip_to_extent="1" alpha="1" force_rhr="0">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="133,182,111,255"/>
+              <prop k="color" v="243,166,178,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -1032,9 +1066,9 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -1047,7 +1081,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks/>
         <checkConfiguration/>
       </geometryOptions>
@@ -1082,33 +1116,35 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="id" index="0"/>
-        <alias name="" field="osm_id" index="1"/>
-        <alias name="" field="name" index="2"/>
-        <alias name="" field="type" index="3"/>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="osm_id"/>
+        <alias name="" index="2" field="name"/>
+        <alias name="" index="3" field="type"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="id" expression="" applyOnUpdate="0"/>
-        <default field="osm_id" expression="" applyOnUpdate="0"/>
-        <default field="name" expression="" applyOnUpdate="0"/>
-        <default field="type" expression="" applyOnUpdate="0"/>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
       </defaults>
       <constraints>
-        <constraint field="id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="osm_id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="name" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="type" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="id" notnull_strength="1"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="osm_id" notnull_strength="1"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="type" notnull_strength="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" exp="" desc=""/>
-        <constraint field="osm_id" exp="" desc=""/>
-        <constraint field="name" exp="" desc=""/>
-        <constraint field="type" exp="" desc=""/>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="type" exp=""/>
       </constraintExpressions>
       <expressionfields/>
-      <attributeactions/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
       <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns/>
       </attributetableconfig>
@@ -1129,15 +1165,15 @@
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer maxScale="0" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshEnabled="0" geometry="Point" simplifyAlgorithm="0" simplifyLocal="1" autoRefreshTime="0" simplifyDrawingTol="1" simplifyMaxScale="1" labelsEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1">
+    <maplayer autoRefreshEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshTime="0" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" refreshOnNotifyEnabled="0" simplifyLocal="1" readOnly="0" geometry="Point" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingTol="1">
       <extent>
         <xmin>84129.3828125</xmin>
         <ymin>5618215.5</ymin>
         <xmax>284074.25</xmax>
         <ymax>5842224.5</ymax>
       </extent>
-      <id>osm_housenumbers_9f65cb58_6b5e_4a26_9000_9efb5aa93420</id>
-      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=Point table="import"."osm_housenumbers" (geometry) sql=</datasource>
+      <id>osm_housenumbers_8b0dc05c_e32c_4763_a0fd_56ce32a2fecd</id>
+      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' password='EvLFavmNuEI3qw6nD42u' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=Point table="import"."osm_housenumbers" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1193,12 +1229,12 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0">
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol name="0" clip_to_extent="1" alpha="1" force_rhr="0" type="marker">
-            <layer enabled="1" locked="0" class="SimpleMarker" pass="0">
+          <symbol type="marker" name="0" clip_to_extent="1" alpha="1" force_rhr="0">
+            <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="225,89,137,255"/>
+              <prop k="color" v="255,158,23,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
@@ -1217,9 +1253,9 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -1232,7 +1268,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks/>
         <checkConfiguration/>
       </geometryOptions>
@@ -1288,47 +1324,45 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="id" index="0"/>
-        <alias name="" field="osm_id" index="1"/>
-        <alias name="" field="name" index="2"/>
-        <alias name="" field="type" index="3"/>
-        <alias name="" field="addr:street" index="4"/>
-        <alias name="" field="addr:postcode" index="5"/>
-        <alias name="" field="addr:city" index="6"/>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="osm_id"/>
+        <alias name="" index="2" field="name"/>
+        <alias name="" index="3" field="type"/>
+        <alias name="" index="4" field="addr:street"/>
+        <alias name="" index="5" field="addr:postcode"/>
+        <alias name="" index="6" field="addr:city"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="id" expression="" applyOnUpdate="0"/>
-        <default field="osm_id" expression="" applyOnUpdate="0"/>
-        <default field="name" expression="" applyOnUpdate="0"/>
-        <default field="type" expression="" applyOnUpdate="0"/>
-        <default field="addr:street" expression="" applyOnUpdate="0"/>
-        <default field="addr:postcode" expression="" applyOnUpdate="0"/>
-        <default field="addr:city" expression="" applyOnUpdate="0"/>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
+        <default expression="" applyOnUpdate="0" field="addr:street"/>
+        <default expression="" applyOnUpdate="0" field="addr:postcode"/>
+        <default expression="" applyOnUpdate="0" field="addr:city"/>
       </defaults>
       <constraints>
-        <constraint field="id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="osm_id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="name" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="type" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="addr:street" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="addr:postcode" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="addr:city" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="id" notnull_strength="1"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="osm_id" notnull_strength="1"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="type" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="addr:street" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="addr:postcode" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="addr:city" notnull_strength="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" exp="" desc=""/>
-        <constraint field="osm_id" exp="" desc=""/>
-        <constraint field="name" exp="" desc=""/>
-        <constraint field="type" exp="" desc=""/>
-        <constraint field="addr:street" exp="" desc=""/>
-        <constraint field="addr:postcode" exp="" desc=""/>
-        <constraint field="addr:city" exp="" desc=""/>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="type" exp=""/>
+        <constraint desc="" field="addr:street" exp=""/>
+        <constraint desc="" field="addr:postcode" exp=""/>
+        <constraint desc="" field="addr:city" exp=""/>
       </constraintExpressions>
       <expressionfields/>
-      <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
-      </attributeactions>
+      <attributeactions/>
       <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns/>
       </attributetableconfig>
@@ -1349,9 +1383,9 @@
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer maxScale="0" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshEnabled="0" geometry="Line" simplifyAlgorithm="0" simplifyLocal="1" autoRefreshTime="0" simplifyDrawingTol="1" simplifyMaxScale="1" labelsEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1">
-      <id>osm_housenumbers_interpolated_ee160387_33f8_49c9_9767_d0b5703a72f8</id>
-      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=LineString table="import"."osm_housenumbers_interpolated" (geometry) sql=</datasource>
+    <maplayer autoRefreshEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshTime="0" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" refreshOnNotifyEnabled="0" simplifyLocal="1" readOnly="0" geometry="Line" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingTol="1">
+      <id>osm_housenumbers_interpolated_014a612d_a7bb_4b69_83df_cab87b1e814f</id>
+      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' password='EvLFavmNuEI3qw6nD42u' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=LineString table="import"."osm_housenumbers_interpolated" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1407,17 +1441,17 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0">
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol name="0" clip_to_extent="1" alpha="1" force_rhr="0" type="line">
-            <layer enabled="1" locked="0" class="SimpleLine" pass="0">
+          <symbol type="line" name="0" clip_to_extent="1" alpha="1" force_rhr="0">
+            <layer pass="0" class="SimpleLine" enabled="1" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="229,182,54,255"/>
+              <prop k="line_color" v="231,113,72,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -1429,9 +1463,9 @@
               <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -1444,7 +1478,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks/>
         <checkConfiguration/>
       </geometryOptions>
@@ -1507,46 +1541,46 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="id" index="0"/>
-        <alias name="" field="osm_id" index="1"/>
-        <alias name="" field="name" index="2"/>
-        <alias name="" field="type" index="3"/>
-        <alias name="" field="addr:street" index="4"/>
-        <alias name="" field="addr:postcode" index="5"/>
-        <alias name="" field="addr:city" index="6"/>
-        <alias name="" field="addr:inclusion" index="7"/>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="osm_id"/>
+        <alias name="" index="2" field="name"/>
+        <alias name="" index="3" field="type"/>
+        <alias name="" index="4" field="addr:street"/>
+        <alias name="" index="5" field="addr:postcode"/>
+        <alias name="" index="6" field="addr:city"/>
+        <alias name="" index="7" field="addr:inclusion"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="id" expression="" applyOnUpdate="0"/>
-        <default field="osm_id" expression="" applyOnUpdate="0"/>
-        <default field="name" expression="" applyOnUpdate="0"/>
-        <default field="type" expression="" applyOnUpdate="0"/>
-        <default field="addr:street" expression="" applyOnUpdate="0"/>
-        <default field="addr:postcode" expression="" applyOnUpdate="0"/>
-        <default field="addr:city" expression="" applyOnUpdate="0"/>
-        <default field="addr:inclusion" expression="" applyOnUpdate="0"/>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
+        <default expression="" applyOnUpdate="0" field="addr:street"/>
+        <default expression="" applyOnUpdate="0" field="addr:postcode"/>
+        <default expression="" applyOnUpdate="0" field="addr:city"/>
+        <default expression="" applyOnUpdate="0" field="addr:inclusion"/>
       </defaults>
       <constraints>
-        <constraint field="id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="osm_id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="name" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="type" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="addr:street" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="addr:postcode" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="addr:city" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="addr:inclusion" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="id" notnull_strength="1"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="osm_id" notnull_strength="1"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="type" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="addr:street" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="addr:postcode" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="addr:city" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="addr:inclusion" notnull_strength="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" exp="" desc=""/>
-        <constraint field="osm_id" exp="" desc=""/>
-        <constraint field="name" exp="" desc=""/>
-        <constraint field="type" exp="" desc=""/>
-        <constraint field="addr:street" exp="" desc=""/>
-        <constraint field="addr:postcode" exp="" desc=""/>
-        <constraint field="addr:city" exp="" desc=""/>
-        <constraint field="addr:inclusion" exp="" desc=""/>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="type" exp=""/>
+        <constraint desc="" field="addr:street" exp=""/>
+        <constraint desc="" field="addr:postcode" exp=""/>
+        <constraint desc="" field="addr:city" exp=""/>
+        <constraint desc="" field="addr:inclusion" exp=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions/>
@@ -1570,19 +1604,19 @@
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer maxScale="0" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshEnabled="0" geometry="Polygon" simplifyAlgorithm="0" simplifyLocal="1" autoRefreshTime="0" simplifyDrawingTol="1" simplifyMaxScale="1" labelsEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1">
+    <maplayer autoRefreshEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshTime="0" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" refreshOnNotifyEnabled="0" simplifyLocal="1" readOnly="0" geometry="Point" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingTol="1">
       <extent>
-        <xmin>-63737.46875</xmin>
-        <ymin>5584963.5</ymin>
-        <xmax>302990.3125</xmax>
-        <ymax>5889069</ymax>
+        <xmin>72302.859375</xmin>
+        <ymin>5609419.5</ymin>
+        <xmax>289549.0625</xmax>
+        <ymax>5853146</ymax>
       </extent>
-      <id>osm_landusages_56c50a71_a28d_43ed_88e6_0d0902f84347</id>
-      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=MultiPolygon table="import"."osm_landusages" (geometry) sql=</datasource>
+      <id>osm_places_b56f391a_2cf9_4b1e_a0bc_ca7cc527cb4e</id>
+      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' password='EvLFavmNuEI3qw6nD42u' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=Point table="import"."osm_places" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>osm_landusages</layername>
+      <layername>osm_places</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
@@ -1634,26 +1668,33 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0">
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol name="0" clip_to_extent="1" alpha="1" force_rhr="0" type="fill">
-            <layer enabled="1" locked="0" class="SimpleFill" pass="0">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="164,113,88,255"/>
+          <symbol type="marker" name="0" clip_to_extent="1" alpha="1" force_rhr="0">
+            <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="152,125,183,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -1666,7 +1707,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks/>
         <checkConfiguration/>
       </geometryOptions>
@@ -1699,14 +1740,14 @@
             </config>
           </editWidget>
         </field>
-        <field name="area">
+        <field name="z_order">
           <editWidget type="">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
-        <field name="z_order">
+        <field name="population">
           <editWidget type="">
             <config>
               <Option/>
@@ -1715,41 +1756,43 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="id" index="0"/>
-        <alias name="" field="osm_id" index="1"/>
-        <alias name="" field="name" index="2"/>
-        <alias name="" field="type" index="3"/>
-        <alias name="" field="area" index="4"/>
-        <alias name="" field="z_order" index="5"/>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="osm_id"/>
+        <alias name="" index="2" field="name"/>
+        <alias name="" index="3" field="type"/>
+        <alias name="" index="4" field="z_order"/>
+        <alias name="" index="5" field="population"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="id" expression="" applyOnUpdate="0"/>
-        <default field="osm_id" expression="" applyOnUpdate="0"/>
-        <default field="name" expression="" applyOnUpdate="0"/>
-        <default field="type" expression="" applyOnUpdate="0"/>
-        <default field="area" expression="" applyOnUpdate="0"/>
-        <default field="z_order" expression="" applyOnUpdate="0"/>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
+        <default expression="" applyOnUpdate="0" field="z_order"/>
+        <default expression="" applyOnUpdate="0" field="population"/>
       </defaults>
       <constraints>
-        <constraint field="id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="osm_id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="name" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="type" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="area" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="z_order" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="id" notnull_strength="1"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="osm_id" notnull_strength="1"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="type" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="z_order" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="population" notnull_strength="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" exp="" desc=""/>
-        <constraint field="osm_id" exp="" desc=""/>
-        <constraint field="name" exp="" desc=""/>
-        <constraint field="type" exp="" desc=""/>
-        <constraint field="area" exp="" desc=""/>
-        <constraint field="z_order" exp="" desc=""/>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="type" exp=""/>
+        <constraint desc="" field="z_order" exp=""/>
+        <constraint desc="" field="population" exp=""/>
       </constraintExpressions>
       <expressionfields/>
-      <attributeactions/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
       <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns/>
       </attributetableconfig>
@@ -1770,15 +1813,15 @@
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer maxScale="0" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshEnabled="0" geometry="Line" simplifyAlgorithm="0" simplifyLocal="1" autoRefreshTime="0" simplifyDrawingTol="1" simplifyMaxScale="1" labelsEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1">
+    <maplayer autoRefreshEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshTime="0" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" refreshOnNotifyEnabled="0" simplifyLocal="1" readOnly="0" geometry="Line" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingTol="1">
       <extent>
         <xmin>65016.6640625</xmin>
         <ymin>5606638</ymin>
         <xmax>293547.15625</xmax>
         <ymax>5866279.5</ymax>
       </extent>
-      <id>osm_roads_ff8e6980_5b60_4916_abf3_f4960a2a8732</id>
-      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 sslmode=disable authcfg=67a1qs0 key='id,osm_id' srid=3857 type=LineString table="import"."osm_roads" (geometry) sql=</datasource>
+      <id>osm_roads_7da190c0_0fb7_4b00_b0a5_90e60673ea9a</id>
+      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' password='EvLFavmNuEI3qw6nD42u' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=LineString table="import"."osm_roads" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1834,17 +1877,17 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0">
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol name="0" clip_to_extent="1" alpha="1" force_rhr="0" type="line">
-            <layer enabled="1" locked="0" class="SimpleLine" pass="0">
+          <symbol type="line" name="0" clip_to_extent="1" alpha="1" force_rhr="0">
+            <layer pass="0" class="SimpleLine" enabled="1" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="213,180,60,255"/>
+              <prop k="line_color" v="190,207,80,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -1856,9 +1899,9 @@
               <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -1871,7 +1914,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks/>
         <checkConfiguration/>
       </geometryOptions>
@@ -1962,62 +2005,630 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="id" index="0"/>
-        <alias name="" field="osm_id" index="1"/>
-        <alias name="" field="type" index="2"/>
-        <alias name="" field="name" index="3"/>
-        <alias name="" field="tunnel" index="4"/>
-        <alias name="" field="bridge" index="5"/>
-        <alias name="" field="oneway" index="6"/>
-        <alias name="" field="ref" index="7"/>
-        <alias name="" field="z_order" index="8"/>
-        <alias name="" field="access" index="9"/>
-        <alias name="" field="service" index="10"/>
-        <alias name="" field="class" index="11"/>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="osm_id"/>
+        <alias name="" index="2" field="type"/>
+        <alias name="" index="3" field="name"/>
+        <alias name="" index="4" field="tunnel"/>
+        <alias name="" index="5" field="bridge"/>
+        <alias name="" index="6" field="oneway"/>
+        <alias name="" index="7" field="ref"/>
+        <alias name="" index="8" field="z_order"/>
+        <alias name="" index="9" field="access"/>
+        <alias name="" index="10" field="service"/>
+        <alias name="" index="11" field="class"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="id" expression="" applyOnUpdate="0"/>
-        <default field="osm_id" expression="" applyOnUpdate="0"/>
-        <default field="type" expression="" applyOnUpdate="0"/>
-        <default field="name" expression="" applyOnUpdate="0"/>
-        <default field="tunnel" expression="" applyOnUpdate="0"/>
-        <default field="bridge" expression="" applyOnUpdate="0"/>
-        <default field="oneway" expression="" applyOnUpdate="0"/>
-        <default field="ref" expression="" applyOnUpdate="0"/>
-        <default field="z_order" expression="" applyOnUpdate="0"/>
-        <default field="access" expression="" applyOnUpdate="0"/>
-        <default field="service" expression="" applyOnUpdate="0"/>
-        <default field="class" expression="" applyOnUpdate="0"/>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="tunnel"/>
+        <default expression="" applyOnUpdate="0" field="bridge"/>
+        <default expression="" applyOnUpdate="0" field="oneway"/>
+        <default expression="" applyOnUpdate="0" field="ref"/>
+        <default expression="" applyOnUpdate="0" field="z_order"/>
+        <default expression="" applyOnUpdate="0" field="access"/>
+        <default expression="" applyOnUpdate="0" field="service"/>
+        <default expression="" applyOnUpdate="0" field="class"/>
       </defaults>
       <constraints>
-        <constraint field="id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="osm_id" exp_strength="0" constraints="3" unique_strength="1" notnull_strength="1"/>
-        <constraint field="type" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="name" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="tunnel" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="bridge" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="oneway" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="ref" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="z_order" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="access" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="service" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
-        <constraint field="class" exp_strength="0" constraints="0" unique_strength="0" notnull_strength="0"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="id" notnull_strength="1"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="osm_id" notnull_strength="1"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="type" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="tunnel" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="bridge" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="oneway" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="ref" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="z_order" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="access" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="service" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="class" notnull_strength="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" exp="" desc=""/>
-        <constraint field="osm_id" exp="" desc=""/>
-        <constraint field="type" exp="" desc=""/>
-        <constraint field="name" exp="" desc=""/>
-        <constraint field="tunnel" exp="" desc=""/>
-        <constraint field="bridge" exp="" desc=""/>
-        <constraint field="oneway" exp="" desc=""/>
-        <constraint field="ref" exp="" desc=""/>
-        <constraint field="z_order" exp="" desc=""/>
-        <constraint field="access" exp="" desc=""/>
-        <constraint field="service" exp="" desc=""/>
-        <constraint field="class" exp="" desc=""/>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="type" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="tunnel" exp=""/>
+        <constraint desc="" field="bridge" exp=""/>
+        <constraint desc="" field="oneway" exp=""/>
+        <constraint desc="" field="ref" exp=""/>
+        <constraint desc="" field="z_order" exp=""/>
+        <constraint desc="" field="access" exp=""/>
+        <constraint desc="" field="service" exp=""/>
+        <constraint desc="" field="class" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions/>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer autoRefreshEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshTime="0" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" refreshOnNotifyEnabled="0" simplifyLocal="1" readOnly="0" geometry="Point" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingTol="1">
+      <extent>
+        <xmin>74566.3125</xmin>
+        <ymin>5608871.5</ymin>
+        <xmax>279610.0625</xmax>
+        <ymax>5851223</ymax>
+      </extent>
+      <id>osm_transport_points_e8fc4dd1_672b_4f8a_b6ab_5ba919030ec0</id>
+      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' password='EvLFavmNuEI3qw6nD42u' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=Point table="import"."osm_transport_points" (geometry) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>osm_transport_points</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+            <srsid>3857</srsid>
+            <srid>3857</srid>
+            <authid>EPSG:3857</authid>
+            <description>WGS 84 / Pseudo-Mercator</description>
+            <projectionacronym>merc</projectionacronym>
+            <ellipsoidacronym>WGS84</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
+        <symbols>
+          <symbol type="marker" name="0" clip_to_extent="1" alpha="1" force_rhr="0">
+            <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="225,89,137,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="osm_id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="type">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ref">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="osm_id"/>
+        <alias name="" index="2" field="name"/>
+        <alias name="" index="3" field="type"/>
+        <alias name="" index="4" field="ref"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
+        <default expression="" applyOnUpdate="0" field="ref"/>
+      </defaults>
+      <constraints>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="id" notnull_strength="1"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="osm_id" notnull_strength="1"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="type" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="ref" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="type" exp=""/>
+        <constraint desc="" field="ref" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions/>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer autoRefreshEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshTime="0" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" refreshOnNotifyEnabled="0" simplifyLocal="1" readOnly="0" geometry="Polygon" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingTol="1">
+      <extent>
+        <xmin>-64571.66796875</xmin>
+        <ymin>5590877</ymin>
+        <xmax>292956.125</xmax>
+        <ymax>5889145.5</ymax>
+      </extent>
+      <id>osm_waterareas_6ee50474_d111_469b_96e8_d00458fe52a9</id>
+      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' password='EvLFavmNuEI3qw6nD42u' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=MultiPolygon table="import"."osm_waterareas" (geometry) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>osm_waterareas</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+            <srsid>3857</srsid>
+            <srid>3857</srid>
+            <authid>EPSG:3857</authid>
+            <description>WGS 84 / Pseudo-Mercator</description>
+            <projectionacronym>merc</projectionacronym>
+            <ellipsoidacronym>WGS84</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
+        <symbols>
+          <symbol type="fill" name="0" clip_to_extent="1" alpha="1" force_rhr="0">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="114,155,111,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="osm_id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="type">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="area">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="osm_id"/>
+        <alias name="" index="2" field="name"/>
+        <alias name="" index="3" field="type"/>
+        <alias name="" index="4" field="area"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
+        <default expression="" applyOnUpdate="0" field="area"/>
+      </defaults>
+      <constraints>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="id" notnull_strength="1"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="osm_id" notnull_strength="1"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="type" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="area" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="type" exp=""/>
+        <constraint desc="" field="area" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions/>
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer autoRefreshEnabled="0" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" minScale="1e+08" refreshOnNotifyMessage="" autoRefreshTime="0" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" refreshOnNotifyEnabled="0" simplifyLocal="1" readOnly="0" geometry="Line" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyDrawingTol="1">
+      <extent>
+        <xmin>64596.484375</xmin>
+        <ymin>5552976</ymin>
+        <xmax>549789.6875</xmax>
+        <ymax>5875738.5</ymax>
+      </extent>
+      <id>osm_waterways_d73ec725_7a9d_4c95_85a6_762d2f619e45</id>
+      <datasource>dbname='blckw0psbcf8uw6mwkm6' host=blckw0psbcf8uw6mwkm6-postgresql.services.clever-cloud.com port=5172 user='ufsrpslhzke3dipkhawq' password='EvLFavmNuEI3qw6nD42u' sslmode=disable key='id,osm_id' estimatedmetadata=true srid=3857 type=LineString table="import"."osm_waterways" (geometry) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>osm_waterways</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+            <srsid>3857</srsid>
+            <srid>3857</srid>
+            <authid>EPSG:3857</authid>
+            <description>WGS 84 / Pseudo-Mercator</description>
+            <projectionacronym>merc</projectionacronym>
+            <ellipsoidacronym>WGS84</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="défaut">
+        <map-layer-style name="défaut"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
+        <symbols>
+          <symbol type="line" name="0" clip_to_extent="1" alpha="1" force_rhr="0">
+            <layer pass="0" class="SimpleLine" enabled="1" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="229,182,54,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.26"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="ring_filter" v="0"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="osm_id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="type">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" index="0" field="id"/>
+        <alias name="" index="1" field="osm_id"/>
+        <alias name="" index="2" field="name"/>
+        <alias name="" index="3" field="type"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="type"/>
+      </defaults>
+      <constraints>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="id" notnull_strength="1"/>
+        <constraint constraints="3" exp_strength="0" unique_strength="1" field="osm_id" notnull_strength="1"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="name" notnull_strength="0"/>
+        <constraint constraints="0" exp_strength="0" unique_strength="0" field="type" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="type" exp=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
@@ -2045,123 +2656,126 @@
     </maplayer>
   </projectlayers>
   <layerorder>
-    <layer id="osm_housenumbers_9f65cb58_6b5e_4a26_9000_9efb5aa93420"/>
-    <layer id="osm_housenumbers_interpolated_ee160387_33f8_49c9_9767_d0b5703a72f8"/>
-    <layer id="osm_aeroways_9f1d47f1_5ff9_4916_ad6b_505c6bedb77f"/>
-    <layer id="osm_amenities_043584da_9aa4_44bf_a250_547b1a8dd353"/>
-    <layer id="osm_barrierpoints_71bacf73_cc1d_4243_aa30_a3a9529b63a6"/>
-    <layer id="osm_barrierways_362e2361_5fe3_4710_b4f3_5ce23ce22ebe"/>
-    <layer id="osm_buildings_4a21b4c4_f276_4397_a400_ade68d25e6d5"/>
-    <layer id="osm_landusages_56c50a71_a28d_43ed_88e6_0d0902f84347"/>
-    <layer id="osm_roads_ff8e6980_5b60_4916_abf3_f4960a2a8732"/>
+    <layer id="osm_aeroways_418a585d_6d71_4051_93b2_4ae8144d0c83"/>
+    <layer id="osm_waterways_d73ec725_7a9d_4c95_85a6_762d2f619e45"/>
+    <layer id="osm_transport_points_e8fc4dd1_672b_4f8a_b6ab_5ba919030ec0"/>
+    <layer id="osm_roads_7da190c0_0fb7_4b00_b0a5_90e60673ea9a"/>
+    <layer id="osm_places_b56f391a_2cf9_4b1e_a0bc_ca7cc527cb4e"/>
+    <layer id="osm_housenumbers_interpolated_014a612d_a7bb_4b69_83df_cab87b1e814f"/>
+    <layer id="osm_barrierways_9aff859d_fbdc_47cf_8b29_21c0cb43c5ca"/>
+    <layer id="osm_housenumbers_8b0dc05c_e32c_4763_a0fd_56ce32a2fecd"/>
+    <layer id="osm_barrierpoints_06cd79af_ba54_4139_9dfe_ebf593a39552"/>
+    <layer id="osm_amenities_8a1be495_215f_4b5d_952a_f0e9ca9cf4d0"/>
+    <layer id="osm_buildings_622ea9ab_4cde_4ee2_8fef_7a6556da090a"/>
+    <layer id="osm_waterareas_6ee50474_d111_469b_96e8_d00458fe52a9"/>
   </layerorder>
   <properties>
-    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
-    <WMSUseLayerIDs type="bool">true</WMSUseLayerIDs>
-    <WMSServiceTitle type="QString">un titre</WMSServiceTitle>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <WMSContactMail type="QString"></WMSContactMail>
-    <WMSRootName type="QString">testserver</WMSRootName>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WFSLayers type="QStringList"/>
     <WMTSUrl type="QString"></WMTSUrl>
+    <Gui>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+    </Gui>
+    <DefaultStyles>
+      <Fill type="QString"></Fill>
+      <ColorRamp type="QString"></ColorRamp>
+      <Opacity type="double">1</Opacity>
+      <RandomColors type="bool">true</RandomColors>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+    </DefaultStyles>
     <Measurement>
       <DistanceUnits type="QString">meters</DistanceUnits>
       <AreaUnits type="QString">m2</AreaUnits>
     </Measurement>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSUrl type="QString"></WMSUrl>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMTSLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSLayers>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <PAL>
+      <SearchMethod type="int">0</SearchMethod>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <TextFormat type="int">0</TextFormat>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+    </PAL>
+    <WMTSJpegLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSExtent type="QStringList">
+      <value>134147.0612008520110976</value>
+      <value>5747382.25956920627504587</value>
+      <value>146916.71336887517827563</value>
+      <value>5758924.06056722719222307</value>
+    </WMSExtent>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMSContactPhone type="QString"></WMSContactPhone>
     <Measure>
       <Ellipsoid type="QString">WGS84</Ellipsoid>
     </Measure>
-    <WCSUrl type="QString"></WCSUrl>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <DefaultStyles>
-      <Fill type="QString"></Fill>
-      <ColorRamp type="QString"></ColorRamp>
-      <RandomColors type="bool">true</RandomColors>
-      <Marker type="QString"></Marker>
-      <Line type="QString"></Line>
-      <Opacity type="double">1</Opacity>
-    </DefaultStyles>
-    <WFSLayers type="QStringList"/>
-    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WFSUrl type="QString"></WFSUrl>
     <SpatialRefSys>
       <ProjectionsEnabled type="int">1</ProjectionsEnabled>
     </SpatialRefSys>
-    <WMSRequestDefinedDataSources type="bool">true</WMSRequestDefinedDataSources>
-    <Gui>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-    </Gui>
-    <WCSLayers type="QStringList"/>
-    <WFSTLayers>
-      <Insert type="QStringList"/>
-      <Delete type="QStringList"/>
-      <Update type="QStringList"/>
-    </WFSTLayers>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WMTSPngLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSPngLayers>
+    <WMSRootName type="QString">lim</WMSRootName>
+    <WMSServiceTitle type="QString">lim</WMSServiceTitle>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
     <PositionPrecision>
       <DecimalPlaces type="int">2</DecimalPlaces>
       <Automatic type="bool">true</Automatic>
       <DegreeFormat type="QString">MU</DegreeFormat>
     </PositionPrecision>
-    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
-    <PAL>
-      <TextFormat type="int">0</TextFormat>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <SearchMethod type="int">0</SearchMethod>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-    </PAL>
+    <WCSLayers type="QStringList"/>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <WMSImageQuality type="int">90</WMSImageQuality>
     <WMSFees type="QString">conditions unknown</WMSFees>
-    <WMTSLayers>
-      <Project type="bool">false</Project>
-      <Group type="QStringList"/>
-      <Layer type="QStringList"/>
-    </WMTSLayers>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <WFSUrl type="QString"></WFSUrl>
-    <WMSUrl type="QString"></WMSUrl>
-    <WMSPrecision type="QString">8</WMSPrecision>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSKeywordList type="QStringList">
-      <value></value>
-    </WMSKeywordList>
-    <WMTSPngLayers>
-      <Project type="bool">false</Project>
-      <Group type="QStringList"/>
-      <Layer type="QStringList"/>
-    </WMTSPngLayers>
-    <WMSExtent type="QStringList">
-      <value>87269.36115462478483096</value>
-      <value>5732697.87200333084911108</value>
-      <value>186803.73130562907317653</value>
-      <value>5785917.11615921463817358</value>
-    </WMSExtent>
-    <WMTSJpegLayers>
-      <Project type="bool">false</Project>
-      <Group type="QStringList"/>
-      <Layer type="QStringList"/>
-    </WMTSJpegLayers>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
-    <WMSContactOrganization type="QString">oslandia</WMSContactOrganization>
   </properties>
   <visibility-presets/>
   <transformContext/>
@@ -2183,7 +2797,7 @@
     </contact>
     <links/>
     <author>augustin</author>
-    <creation>2019-09-25T15:51:59</creation>
+    <creation>2019-09-26T09:51:58</creation>
   </projectMetadata>
   <Annotations/>
   <Layouts/>
