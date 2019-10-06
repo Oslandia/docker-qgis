@@ -19,7 +19,6 @@ COPY deb/libqgis-analysis*.deb \
 
 RUN apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y \
-        multiwatch \
         spawn-fcgi \
         xauth \
         xvfb \
@@ -35,8 +34,6 @@ RUN chmod +x /tini
 ENV QGIS_PREFIX_PATH /usr
 ENV QGIS_SERVER_LOG_STDERR 1
 ENV QGIS_SERVER_LOG_LEVEL 2
-
-ENV PROCESSES 1
 
 COPY cmd.sh /home/qgis/cmd.sh
 RUN chown qgis:qgis /home/qgis/cmd.sh
