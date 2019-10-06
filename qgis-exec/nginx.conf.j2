@@ -1,3 +1,8 @@
+upstream qgis-backend {
+{%- for i in range(REPLICAS | int) %}
+    server qgis-exec-{{ i }}:555{{ i }};
+{%- endfor %}
+}
 server {
         listen 80 default_server;
 
@@ -14,9 +19,9 @@ server {
                 gzip off;
                 fastcgi_param SERVER_NAME $host;
                 fastcgi_param SERVER_PORT $_request_port;
-                fastcgi_param QUERY_STRING $query_string&MAP=/data/eleonore/eleonore.qgs;
-                fastcgi_read_timeout 120s;
+                fastcgi_param QUERY_STRING $query_string&MAP=/data/orange/communes.qgs;
+                fastcgi_read_timeout 600s;
                 include fastcgi_params;
-                fastcgi_pass localhost:5555;
+                fastcgi_pass qgis-backend;
         }
 }
