@@ -69,13 +69,14 @@ $ docker run -it --rm -v $(pwd):/qgis -v $HOME/.ccache:/.ccache -e USER=$(id -u)
 At this point you can execute the images's `/build.sh` script for building and installing QGIS using
 `cmake` and `make`. Or you can execute the build commands of your choice.
 
-After the compilation phase `/build.sh` installs QGIS into `/qgis/install`. So if the directory
+After the compilation phase `/build.sh` installs QGIS under `/qgis/install`. So if the directory
 `/qgis` is the target of a bind-mount (as in the sample command provided above) then QGIS will be
-installed in a host directory that will still be there after the removal of the container.
+installed in a host directory that will still be there after the removal of the container. The
+installation directory may be changed by setting the `INSTALL_PREFIX` environment variable.
 
-Prior to executing `/build.sh` the environment variable `BUILD_TYPE` may be set. If not explicitely
-set the build type defaults to `Release`. When set to `Debug` the resulting compilation artifacts
-will include debug information.
+The environment variable `BUILD_TYPE` may also be set. If not explicitely set the build type
+defaults to `Release`. When set to `Debug` the resulting compilation artifacts will include debug
+information.
 
 ### Running and debugging QGIS Server
 
