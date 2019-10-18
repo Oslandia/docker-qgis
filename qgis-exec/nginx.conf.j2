@@ -1,3 +1,8 @@
+upstream qgis-backend {
+{%- for i in range(REPLICAS | int) %}
+    server qgis-exec-{{ i }}:555{{ i }};
+{%- endfor %}
+}
 server {
         listen 80 default_server;
 
@@ -15,6 +20,6 @@ server {
                 fastcgi_param SERVER_NAME $host;
                 fastcgi_param SERVER_PORT $_request_port;
                 include fastcgi_params;
-                fastcgi_pass qgis-exec:5555;
+                fastcgi_pass qgis-backend;
         }
 }
