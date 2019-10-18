@@ -96,7 +96,7 @@ $ docker-compose rm -sf
 If you just want to run a `qgis-exec` container you can use this:
 
 ```shell
-$ docker run -d --name qgis-exec -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" -e "PROCESSES=4" qgis-exec
+$ docker run -d --name qgis-exec -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" qgis-exec
 ```
 
 And you can use `docker stop` and `docker rm` to stop and remove the container:
@@ -116,7 +116,7 @@ $ docker network create qgis
 And this is how you can make the `qgis-exec` container use that network:
 
 ```shell
-$ docker run -d --name qgis-exec --network=qgis -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" -e "PROCESSES=4" qgis-exec
+$ docker run -d --name qgis-exec --network=qgis -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" qgis-exec
 ```
 
 ## Logging
