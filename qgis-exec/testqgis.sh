@@ -38,5 +38,5 @@ stop=$(date +%s)
 diff=$(echo "$stop - $start" | bc)
 
 if [[ $success -gt 0 ]]; then
-    echo $(echo "$diff / $success" | bc)
+    printf "$(echo "$diff / $success" | bc), "
 fi
