@@ -44,6 +44,9 @@ RUN apt-get update \
         libspatialite-dev \
         libsqlite3-dev \
         libsqlite3-mod-spatialite \
+	libpthread-stubs0-dev \
+	libprotobuf-dev \
+	protobuf-compiler \
         libzip-dev \
         lighttpd \
         locales \

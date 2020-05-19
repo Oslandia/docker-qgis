@@ -9,58 +9,59 @@ Note: with this image QGIS Server is spawned by the FastCGI Server [spawn-fcgi](
 
 First of all clone the Git repo and change to the `qgis-exec` directory:
 
-```shell
-$ git clone https://github.com/Oslandia/docker-qgis
-$ cd docker-qgis/qgis-exec
+```bash
+git clone https://github.com/Oslandia/docker-qgis
+cd docker-qgis/qgis-exec
 ```
 
-The `qgis-exec` directory actually includes multiple Dockerfiles: `Dockerfile` and
-`Dockerfile-jessie` and `Dockerfile-buster`.  With `Dockerfile-jessie` and `Dockerfile-buster`
-official QGIS packages from http://qgis.org/debian/ are used.  With `Dockerfile` local packages
-(generated using a `qgis-build` container) are used.
+The `qgis-exec` directory actually includes multiple Dockerfiles: 
 
-Build the image using official QGIS packages:
+* With `Dockerfile-jessie` and `Dockerfile-buster` official QGIS packages from http://qgis.org/debian/ are used.
 
-```shell
-$ docker build -f Dockerfile-buster -t qgis-exec .
-```
+  Build the image using official QGIS packages:
+  
+  ```bash
+  docker build -f Dockerfile-buster -t qgis-exec .
+  ```
 
-When using `Dockerfile-buster` QGIS 3.8 is installed in the image. You can use `Dockerfile-jessie`
-if you want QGIS 3.4, although using `Dockerfile-buster` is recommended.
+  When using `Dockerfile-buster` QGIS 3.8 is installed in the image. You can use `Dockerfile-jessie`
+  if you want QGIS 3.4, although using `Dockerfile-buster` is recommended.
 
-To build the image using local packages requires copying the packages (the `.deb` files) to a `deb`
-directory located in this directory:
 
-```shell
-$ mkdir -p deb
-$ cp /path/to/debs/*.deb deb/
-```
+* With `Dockerfile` local packages (generated using a `qgis-build` container) are used.
 
-The required packages are:
+  To build the image using local packages requires copying the packages (the `.deb` files) to a `deb` directory located in this directory:
+  
+  ```bash
+  mkdir -p deb
+  cp /path/to/debs/*.deb deb/
+  ```
 
-- libqgis-analysis
-- libqgis-app
-- libqgis-core
-- libqgis-customwidgets
-- libqgisgrass7
-- libqgis-gui
-- libqgis-native
-- libqgispython
-- libqgis-server
-- python-qgis
-- qgis-common
-- qgis-providers
-- qgis-server
+  The required packages are:
 
-Build the image using local packages:
+  * libqgis-analysis
+  * libqgis-app
+  * libqgis-core
+  * libqgis-customwidgets
+  * libqgisgrass7
+  * libqgis-gui
+  * libqgis-native
+  * libqgispython
+  * libqgis-server
+  * python-qgis
+  * qgis-common
+  * qgis-providers
+  * qgis-server
 
-```shell
-$ docker build -t qgis-exec .
-```
+  Build the image using local packages:
 
+  ```bash
+  docker build -t qgis-exec .
+  ```
+  
 ## Run NGINX and QGIS Server
 
-The `qgis-exec` image includes QGIS Server and the `spwan-fcgi` program for running it. It doesn't
+The `qgis-exec` image includes QGIS Server and the `spwan-fcgi` program for running it. It doesn't
 include a web server. This means that in addition to a `qgis-exec` container a web server should be
 be run, and configured to forward requests to QGIS Server running in the `qgis-exec` container.
 
@@ -70,15 +71,15 @@ container configured to work with `qgis-exec`.
 
 Start the stack:
 
-```shell
-$ docker-compose up
+```bash
+docker-compose up
 ```
 
 If `docker-compose` is not available on your system you can install it using in a Python
 virtual environment:
 
-```shell
-$ virtualenv venv
+```bash
+virtualenv venv
 (venv) $ pip install docker-compose
 ```
 
@@ -87,36 +88,36 @@ an OpenLayers map connected to the osm.qgs QGIS project used as an example.
 
 Stop the stack:
 
-```shell
-$ docker-compose rm -sf
+```bash
+docker-compose rm -sf
 ```
 
 ## Without Docker Compose
 
 If you just want to run a `qgis-exec` container you can use this:
 
-```shell
-$ docker run -d --name qgis-exec -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" qgis-exec
+```bash
+docker run -d --name qgis-exec -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" qgis-exec
 ```
 
 And you can use `docker stop` and `docker rm` to stop and remove the container:
 
-```shell
-$ docker stop qgis-exec
-$ docker rm qgis-exec
+```bash
+docker stop qgis-exec
+docker rm qgis-exec
 ```
 
 If the web server (NGINX) also runs in a container you will probably want to create a specific
 Docker network for the web server and `qgis-exec` containers to be able to communicate :
 
-```shell
-$ docker network create qgis
+```bash
+docker network create qgis
 ```
 
 And this is how you can make the `qgis-exec` container use that network:
 
-```shell
-$ docker run -d --name qgis-exec --network=qgis -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" qgis-exec
+```bash
+docker run -d --name qgis-exec --network=qgis -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" qgis-exec
 ```
 
 ## Logging
@@ -141,8 +142,8 @@ the `QUERY_STRING` environment variable for the execution of `qgis_mapserv.fcgi`
 
 For example:
 
-```shell
-$ docker run -it --rm -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" -e "QUERY_STRING=SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0" qgis-exec /usr/lib/cgi-bin/qgis_mapserv.fcgi
+```bash
+docker run -it --rm -v $(pwd)/data:/data:ro -e "QGIS_PROJECT_FILE=/data/osm.qgs" -e "QUERY_STRING=SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0" qgis-exec /usr/lib/cgi-bin/qgis_mapserv.fcgi
 ```
 
 ## Known issues/caveats
